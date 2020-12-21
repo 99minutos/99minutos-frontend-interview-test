@@ -1,5 +1,5 @@
-# 99minutos Fullstack Engineer Interview
-Interview test for Fronend Software Engineers
+# 99minutos Frontend Engineer Interview
+Interview test for Frontend Software Engineers
 
 ## Welcome!
 If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
