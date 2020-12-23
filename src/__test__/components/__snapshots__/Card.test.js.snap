@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Snapshot Check UI of component Card 1`] = `
+<div
+  className="Card"
+>
+  <h2>
+    International station
+  </h2>
+  <p>
+    details
+  </p>
+  <em>
+    27/04/2015
+  </em>
+</div>
+`;

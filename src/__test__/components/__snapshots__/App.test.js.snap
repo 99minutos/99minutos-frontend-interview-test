@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Snapshot Verify the component App UI 1`] = `
+Array [
+  <h1>
+    Last Launches 🚀
+  </h1>,
+  "",
+]
+`;
