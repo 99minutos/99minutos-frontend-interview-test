@@ -1,60 +1,47 @@
-# 99minutos Frontend Engineer Interview
-Interview test for Frontend Software Engineers
-
-## Welcome!
-If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
-
-This README provides the instructions to a small, self-contained test for a Frontend Software Engineer position.
-
-## What we're looking for
-We're looking for a talented and driven frontend developer, comfortable with building responsive front end experiences.
-
-Experience building responsive, elegant and scalable web applications; understand cross-browser/platform compatibility issues.
-
 # 🚀 Front-End Challenge
-This is a quick coding challenge we designed to assess your qualifications as a potential front-end developer. It's important to note that this is by no means a test. We just want to get a sense of how you write code and solve problems.
 
-## Getting started
-To get started with this challenge: 
-1) Fork this repository.
-2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
-3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/PL/SR).
+This is the solution for the 99minutos Front-End challenge
 
-## The Challenge
-We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
+## Table of contents
 
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+- [Prints](prints)
+- [Setup](#setup)
+- [Technologies](#technologies)
+- [If I had had more time](#if-i-had-more-time)
 
-## Details
-Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on this [wireframe](https://bit.ly/2SwvPSP). Use your creativity to choose colors etc...
+## Previews
 
-### Routes
-#### Dashboard
-- List the last 10 missions
-- Clicking on the card, goes to the **Mission** route
+First Screen
+![a](previews/First_Screen.png)
 
-#### Mission
-- Details of the mission (image, etc...)
-- Button to external link
+Second Screen
+![a](previews/Second_Screen.png)
 
-## Required
-- Vue or React or Angular
-- TDD (only PL/SR)
+## Setup
 
-## Desirable
-- Vue using apollo client
+To run this project, install it locally using npm:
 
-## Deliverables
-We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
+```
+$ npm install
+$ npm start
+```
 
-### Bonus points
-- Your code has tests.
+## Technologies
 
-If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact jonathan@99minutos.com or carlos.ramirez@99minutos.com
-Happy coding!
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Styled Components](https://styled-components.com/docs)
+- [Apollo Client](https://www.apollographql.com/docs/react/)
+
+I chose these technologies for the following:
+
+- React: It is the framework that I like to use the most and that I master the most
+
+- Apollo Client: I think that being GraphQL, Apollo Client is the best option to consume an API
+
+- Styled Components: Honestly, I have always liked creating my own styles and what better way to do it than as components
+
+## If I had more time
+
+I really liked the result of the project, but, if I had had more time, I would have added some spinner for better UI / UX, I would have put in a SlideShow with animations
+
+Developed with ⌨️ by David Victoria
