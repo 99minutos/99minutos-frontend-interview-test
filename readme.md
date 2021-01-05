@@ -4,7 +4,7 @@ This is the solution for the 99minutos Front-End challenge
 
 ## Table of contents
 
-- [Prints](prints)
+- [Previews](#previews)
 - [Setup](#setup)
 - [Technologies](#technologies)
 - [If I had had more time](#if-i-had-more-time)
