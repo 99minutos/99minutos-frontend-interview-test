@@ -8,9 +8,15 @@ function Mission() {
   const {loading, error, data} = useQuery(GET_ONE_LAUNCH,{
     variables: {id: missionId}
   })
+  function changeImage (arr){
+    return arr[Math.floor(Math.random() * arr.length - 1)]
+  }
   if(loading)return <p>Loading...</p>
   if(error) return <p>Error: {error}</p>
-  return <Details launch={data.launch}/>;
+  return <Details 
+    launch={data.launch}
+    fn={{changeImage}}
+    />;
 }
 
 export default Mission
