@@ -59,7 +59,11 @@ Details.propTypes = {
     launch: PropTypes.exact({
         mission_name: PropTypes.string,
         details: PropTypes.string,
-        links: PropTypes.arrayOf(PropTypes.string)
+        links: PropTypes.exact({
+            flickr_images: PropTypes.arrayOf(PropTypes.string),
+            video_link: PropTypes.string,
+            article_link: PropTypes.string
+        })
     })
 }
 
