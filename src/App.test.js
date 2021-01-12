@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
-
-test('Space x title', () => {
-  render(<App />);
-  const title = screen.getByText(/Space X Launches/i);
-  expect(title).toBeInTheDocument();
+import {BrowserRouter as Router} from "react-router-dom"
+test('Check for title', () => {
+  const {getByText} = render(
+    <Router>
+      <App />
+    </Router>
+  );
+  expect(getByText(/Front end Challenge/i)).toBeInTheDocument()
 });
+
