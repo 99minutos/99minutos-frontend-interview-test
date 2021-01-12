@@ -31,5 +31,5 @@ export default function Button ({children, ...rest}){
 }
 
 Button.propTypes = {
-    children: PropTypes.children
+    children: PropTypes.string
 }
