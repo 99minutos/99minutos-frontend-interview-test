@@ -27,14 +27,6 @@ npm run build
 
 npm run eject
 ```
-
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
-
 ## How to use
 
 #### Install all dependencies
@@ -56,7 +48,7 @@ npm test
 
 ### How did you decide which technologies to use as part of your solution?
 
-_One important thing is the technologies that i'm know and be confident to use, and think what are the best stable and helpfull libraries. Another thing is for improve best practices._
+_One important thing is the technologies that I know and be confident to use, and think what are the best stable and helpful libraries. Another thing is for improving best practices._
 
 ### Are there any improvements you could make to your submission?
 - Add animations
