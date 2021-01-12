@@ -54,19 +54,20 @@ const Button = styled.button`
         outline:0;
     }
 `
-function Details({launch, fn}) {
+function Details({launch}) {
     const {mission_name,details, links} = launch
-    const {flickr_images, video_link, aricle_link} = links
+    const {flickr_images, video_link, article_link} = links
+    const spaceXImageExtra = "https://wallpapercave.com/wp/wp2284537.jpg"
     return (
         <Container>
             <MissionDetails>
                 <img 
-                    src={flickr_images.length ? fn.changeImage(flickr_images) : mission_name} 
+                    src={flickr_images.length ? flickr_images[0] : spaceXImageExtra} 
                     alt={mission_name}
                 />
                 <h3>{mission_name}</h3>
                 <p>{details?.length ? details : "Details not available" }</p>
-                <Button onClick={() => window.open(video_link || aricle_link)}>
+                <Button onClick={() => window.open(article_link || video_link )}>
                     See More
                 </Button>
             </MissionDetails>
@@ -75,8 +76,7 @@ function Details({launch, fn}) {
 }
 
 Details.propTypes = {
-    launch: PropTypes.object,
-    fn: PropTypes.object
+    launch: PropTypes.object
 }
 
 export default Details
