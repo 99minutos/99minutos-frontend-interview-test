@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import Home from "./Home"
 import {BrowserRouter as Router, Route} from "react-router-dom"
-import { act } from 'react-dom/test-utils';
 
 test("Check button to dashboard", () => {
     let testHistory, testLocation;
@@ -18,9 +17,6 @@ test("Check button to dashboard", () => {
             />
         </Router>
     );
-  
-    act(() => {
-      getByTestId('todashboard-button').click()
-    });
+    getByTestId('todashboard-button').click()
     expect(testLocation.pathname).toBe("/dashboard");
 })
