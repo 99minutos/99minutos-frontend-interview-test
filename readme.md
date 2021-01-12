@@ -1,6 +1,22 @@
 # 99minutos Frontend Engineer Interview
 Interview test for Frontend Software Engineers
 
+## App Images
+
+<details>
+<summary>Desktop Captures</summary>
+
+![Dashboard Desktop](./src/img/dashboarDesktop.png)
+![Mission Desktop](./src/img/missionDesktop.png)
+</details>
+
+<details>
+<summary>Mobile Captures</summary>
+
+![Dashboard Mobile](./src/img/dashboardMobile.png)
+![Mission Mobile](./src/img/missionMobile.png)
+</details>
+
 ## Welcome!
 If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
 
