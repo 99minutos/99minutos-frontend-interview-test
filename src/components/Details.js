@@ -56,10 +56,10 @@ function Details({launch}) {
 }
 
 Details.propTypes = {
-    launch: PropTypes.exact({
+    launch: PropTypes.shape({
         mission_name: PropTypes.string,
         details: PropTypes.string,
-        links: PropTypes.exact({
+        links: PropTypes.shape({
             flickr_images: PropTypes.arrayOf(PropTypes.string),
             video_link: PropTypes.string,
             article_link: PropTypes.string
