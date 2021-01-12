@@ -57,7 +57,12 @@ function Launch({launch}) {
 }
 
 Launch.propTypes = {
-    launch: PropTypes.object
+    launch: PropTypes.exact({
+        id: PropTypes.string,
+        mission_name: PropTypes.string,
+        details: PropTypes.string,
+        launch_date_local: PropTypes.string
+    })
 }
 
 export default Launch
