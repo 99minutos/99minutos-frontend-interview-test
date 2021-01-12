@@ -43,7 +43,7 @@ function Home() {
 
     return (
         <Container>
-            <InfoProfile onClick={handleClick}>
+            <InfoProfile data-testid="todashboard-button" onClick={handleClick}>
                 <h1>Front End Challenge</h1>
             </InfoProfile>
         </Container>
