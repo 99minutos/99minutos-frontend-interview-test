@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { useHistory } from "react-router-dom";
+import {truncateString, transformDate} from "../helpers/index"
 
 const Container = styled.div`
     max-width: 450px;
@@ -34,9 +35,8 @@ const DetailsLaunch = styled.p`
     font-style: italic;
 `
 
-function Launch({launch, fn}) {
+function Launch({launch}) {
     const {mission_name, details, launch_date_local, id} = launch;
-    const {truncate, transformDate} = fn
     let history = useHistory()
 
     function handleClick(){
@@ -48,7 +48,7 @@ function Launch({launch, fn}) {
             <h3>{mission_name}</h3>
             <p>
                 {details?.length ? 
-                truncate(details, 110) : 
+                truncateString(details, 110) : 
                 "Details not available"}
             </p>
             <DetailsLaunch>{transformDate(launch_date_local)}</DetailsLaunch>
@@ -57,8 +57,7 @@ function Launch({launch, fn}) {
 }
 
 Launch.propTypes = {
-    launch: PropTypes.object,
-    fn: PropTypes.object,
+    launch: PropTypes.object
 }
 
 export default Launch
