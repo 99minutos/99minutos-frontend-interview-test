@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from "styled-components"
+import Button from "../components/Button"
 
 const Container = styled.div`
     display: flex;
@@ -33,27 +34,6 @@ const MissionDetails = styled.div`
         object-position: center;
     }
 `
-
-const Button = styled.button`
-    height: 40px;
-    width: 100px;
-    border: none;
-    background-color: #c3cfd9;
-    color: #293845;
-    font-size: 1em;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor:pointer;
-
-    &:hover {
-        background-color:#293845;
-        color: #c3cfd9
-    }
-    
-    &:focus{
-        outline:0;
-    }
-`
 function Details({launch}) {
     const {mission_name,details, links} = launch
     const {flickr_images, video_link, article_link} = links
@@ -76,7 +56,11 @@ function Details({launch}) {
 }
 
 Details.propTypes = {
-    launch: PropTypes.object
+    launch: PropTypes.exact({
+        mission_name: PropTypes.string,
+        details: PropTypes.string,
+        links: PropTypes.arrayOf(PropTypes.string)
+    })
 }
 
 export default Details
