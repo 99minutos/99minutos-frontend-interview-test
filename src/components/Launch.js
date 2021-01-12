@@ -57,7 +57,7 @@ function Launch({launch}) {
 }
 
 Launch.propTypes = {
-    launch: PropTypes.exact({
+    launch: PropTypes.shape({
         id: PropTypes.string,
         mission_name: PropTypes.string,
         details: PropTypes.string,
