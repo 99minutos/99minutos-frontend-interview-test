@@ -2,6 +2,8 @@ import Launch from "../../components/Launch"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_LAUNCHES} from "../../grapql/queries/index"
 import styled from "styled-components"
+import Loading from "../../components/Loading"
+import ErrorPage from "../../components/ErrorPage"
 
 const Container = styled.div`
     display: flex;
@@ -31,8 +33,8 @@ const Dasboard = () => {
       return  [splitDate[1], splitDate[2], splitDate[0]].join("/")
   }
 
-  if(loading)return <p>Loading...</p>
-  if(error) return <p>Error: {error}</p>
+  if(loading)return <Loading/>
+  if(error) return <ErrorPage error={error}/>
   return(
     <Container>
       <Row>
