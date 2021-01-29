@@ -1,0 +1,76 @@
+.rowSecundarioM{
+    background:rgba(0, 192, 255,0.1);
+    width: inherit;
+    height: 700px;
+}
+
+.titleNoticeM{
+    width: 100%;
+    height: 10%;
+    background:rgba(0, 192, 255,0.6);
+    border-radius: 5px;
+    text-align: -webkit-center;
+    color: white;
+}
+
+.titleNoticeM>p{
+    font-size: 30px;
+}
+
+.carrucelImg{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.divImgCarrucel{
+    width: 100%;
+    height: 100%;
+    background:rgba(1,1,1,.7);
+}
+.divImgCarrucel>img{
+    width: 300px;
+    height: 400px;
+    object-fit: scale-down;
+}
+
+.bodyNoticeM{
+    color: white;
+    background:rgba(1,1,1,.7);
+    text-align: justify;
+    width: 100%;
+    height: 80%;
+    font-size: 17px;
+    overflow: auto;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.carousel .slide{
+    background:rgba(1,1,1,.1) !important;
+}
+
+.buttonBlog{
+    background: rgba(1,1,1,.6);
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: inline-flex;
+}
+
+.buttonBlogM>button{
+    background: darkgoldenrod;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    border-color: #1b74bb;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    float: right;
+}
+.buttonBlogM>button:hover{
+    background: gold;
+}
