@@ -1,60 +1,70 @@
-# 99minutos Frontend Engineer Interview
-Interview test for Frontend Software Engineers
+# Getting Started with Create React App
 
-## Welcome!
-If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This README provides the instructions to a small, self-contained test for a Frontend Software Engineer position.
+## Available Scripts
 
-## What we're looking for
-We're looking for a talented and driven frontend developer, comfortable with building responsive front end experiences.
+In the project directory, you can run:
 
-Experience building responsive, elegant and scalable web applications; understand cross-browser/platform compatibility issues.
+### `yarn start`
 
-# 🚀 Front-End Challenge
-This is a quick coding challenge we designed to assess your qualifications as a potential front-end developer. It's important to note that this is by no means a test. We just want to get a sense of how you write code and solve problems.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Getting started
-To get started with this challenge: 
-1) Fork this repository.
-2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
-3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/PL/SR).
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## The Challenge
-We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
+### `yarn test`
 
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Details
-Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on this [wireframe](https://bit.ly/2SwvPSP). Use your creativity to choose colors etc...
+### `yarn build`
 
-### Routes
-#### Dashboard
-- List the last 10 missions
-- Clicking on the card, goes to the **Mission** route
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-#### Mission
-- Details of the mission (image, etc...)
-- Button to external link
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Required
-- Vue or React or Angular
-- TDD (only PL/SR)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Desirable
-- Vue using apollo client
+### `yarn eject`
 
-## Deliverables
-We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Bonus points
-- Your code has tests.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact jonathan@99minutos.com or carlos.ramirez@99minutos.com
-Happy coding!
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

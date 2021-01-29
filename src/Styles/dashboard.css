@@ -1,0 +1,126 @@
+.rowSecundario{
+    height: 700px;
+}
+
+.colNotice{
+    height: inherit;
+}
+
+.rowNotice{
+    height: inherit;
+    width: 80%;
+    margin: auto;
+}
+
+.nomPanelNotice{
+    background: rgba(1,1,1,.6);
+    color: white;
+    height: 10%;
+}
+
+.panelNotice{
+    height: 90%;
+    overflow: auto;
+    background: rgba(1,1,1,.6);
+}
+
+.notices{
+    background:rgba(255,255,255,.7);
+    border-radius: 5px;
+    text-align: -webkit-center;
+    border-color: #1b74bb;
+    border-style: solid;
+    border-width: 3px;
+    margin: 0px 0 9px 0px;
+    color: black;
+}
+.notices>h3{
+    text-align: left;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.notices>p{
+    text-align: justify;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 3%;
+    font-size: 17px;
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.notices>h6{
+    text-align: right;
+    width: 90%;
+    padding-bottom: 3px;
+}
+.notices:hover{
+    background: rgba(0, 192, 255,0.1);
+    color: white;
+}
+
+.colBlog{
+    height: inherit;
+}
+
+.panelDataBlog{
+    width: 100%;
+    height: 100%;
+}
+
+.imgBlog{
+    background: rgba(1,1,1,.6);
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+.imgBlog>img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.textBlog{
+    background: rgba(1,1,1,.6);
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    color: white;
+    overflow: auto;
+}
+.textBlog>p{
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+}
+.buttonBlog{
+    background: rgba(1,1,1,.6);
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: inline-flex;
+}
+.buttonBlog>button{
+    background: rgba(0, 192, 255,0.3);
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    border-color: #1b74bb;
+    border-width: 2px;
+    border-style: solid;
+    align-self: center;
+    margin: auto;
+}
+.buttonBlog>button:hover{
+    background: rgba(0, 192, 255,0.6);
+}
+.buttonBlog>button>a:hover{
+    color: white;
+    text-decoration: none;
+}
