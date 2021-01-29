@@ -20,15 +20,18 @@ export default class Mission extends React.Component{
         }
     }
     componentDidMount() {
-        this.setState({
-            data:this.props.location.state.data,
-            links:this.props.location.state.data.links,
-            images:this.props.location.state.data.links.flickr_images,
-        })
+       try {
+           this.setState({
+               data:this.props.location.state.data,
+               links:this.props.location.state.data.links,
+               images:this.props.location.state.data.links.flickr_images,
+           })
+       } catch (e){
+           console.log(e)
+               window.location.href="/"
+       }
     }
-    componentWillUnmount() {
-        window.location.href="/"
-    }
+
 
     render(){
         console.log("estoy en mision")
