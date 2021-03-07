@@ -1,12 +1,36 @@
 import  Dropdown  from './Dropdown'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import { gql } from '@apollo/client';
+import client from '../services/index';
+import query from '../services/queries'
+
 
 const Navbar = () => {
     const [nav, setNav]= useState(false)
+    const [mission, setMission]= useState(null)
+
+    // generate random number from mission 100 to 108
+    useEffect(() => {
+    var id= Math.floor(Math.random() * (108 - 100) + 100).toString()
+        client
+        .query({
+            query: gql` ${query}`
+        }).then(response => {
+            let data= response.data.launchesPast
+            let random= data.filter(number=> number.id===id)
+            setMission(random[0])}  
+            )
+        .catch(err => console.log(err));
+        
+    }, [])
+
+
+    
+
     return (
         <>
-        <nav className='bg-gray-800	flex justify-between items-center h-16 bg-white text-white'>
+        <nav className='bg-gray-800	flex justify-between items-center h-16 bg-white text-white w-screen fixed top-0 z-10'>
                 
             {/* logo */}
                 <Link to='/' className='pl-14'>
@@ -14,11 +38,13 @@ const Navbar = () => {
                 </Link>
 
             {/* open menu */}
-            <div className='pr-8 md:block hidden flex flex-row '>
-                <Link to='/' className='p-4 text-white'> Home </Link>
-                <Link to='/dash' className='p-4 text-white'> All launches </Link>
-                <Link className='p-4 text-white'> Random </Link>
-                <Link to='/' className='p-4 text-white'> Spacex.com </Link>
+            <div className='pr-8 md:block hidden flex flex-row text-center'>
+                <Link to='/' className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> Home </Link>
+                <Link to='/dash' className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> All launches </Link>
+                
+                {mission? <Link to={{pathname:`/mission/${mission.id}`, state: {mission}}} className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> Random </Link>
+                : <></>}
+                <a href='http://www.spacex.com' target="_blank" className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'>SpaceX.com</a>
             </div>
             
             {/* burger menu */}
