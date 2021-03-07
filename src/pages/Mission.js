@@ -31,7 +31,7 @@ const Mission = (props) => {
                     <h2>Launch Date  </h2>   
                     <div>
                         {mission.links? 
-                            <a  href={mission.links.video_link} target="_blank">Video</a>
+                            <a href={mission.links.video_link} target="_blank">Video</a>
                             :
                             <p>No videos found</p>
 
