@@ -1,36 +1,39 @@
 
-## Available Scripts
+## Instructions
 
-In the project directory, you can run:
+You can clone this repsitory and run with:
 
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+Open [http://localhost:3000]to view it in the browser.
 
 
+## Tecnologies 
+
+The main technologies used in this proyect were:
+- React JS- Components make it easy to write scalable, clean and reusable code.
+- Tailwind CSS- Was instructed to work with Tailwind, however I enjoyed using it so I will continue to do so!
+- Ant Design - Only used to create a carousel of images in Mission.js 
+- Apollo Client- Is compatible with React Js and Hooks, it requires almost no configuration and it´s easy to use.
+
+## Improvements
+Continue experimenting with Tailwind and create new customizations. 
+
+## More time
+- Create a search bar.
+- use Tailwind @apply to reduce code 
+
+## Prints
+
+-Dashboard
+![dash computee](public/spacex-dash-computer.png)
+![dash phone](public/spacex-dash-phone.png)
+
+-Mission
+![mission computer](public/spacex-mission-copmuter.png)
+![mission phone](public/spacex-mission-phone.png)
+
+-open burger menu
+![mission phone opn](public/openmenu-phone.png)
