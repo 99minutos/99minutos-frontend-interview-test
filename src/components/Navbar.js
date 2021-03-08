@@ -18,8 +18,10 @@ const Navbar = () => {
             query: gql` ${query}`
         }).then(response => {
             let data= response.data.launchesPast
+            // we generate a random id and use filter to get a random mission
             let random= data.filter(number=> number.id===id)
-            setMission(random[0])}  
+            setMission(random[0])
+        }  
             )
         .catch(err => console.log(err));
         
@@ -39,12 +41,18 @@ const Navbar = () => {
 
             {/* open menu */}
             <div className='pr-8 md:block hidden flex flex-row text-center'>
-                <Link to='/' className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> Home </Link>
-                <Link to='/dash' className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> All launches </Link>
+                <Link to='/' className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> Dashboard</Link>
                 
-                {mission? <Link to={{pathname:`/mission/${mission.id}`, state: {mission}}} className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> Random </Link>
-                : <></>}
-                <a href='http://www.spacex.com' target="_blank" className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'>SpaceX.com</a>
+                {/* we send the all data of the random mission through props  */}
+                {mission? 
+                    <Link to={{pathname:`/mission/${mission.id}`, state: {mission}}} className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'> 
+                        Random launch
+                    </Link>
+                    :<></>
+                }
+                    <a href='http://www.spacex.com' target="_blank" rel="noreferrer" className='p-4 text-white hover:bg-gray-300 hover:text-gray-800'>
+                        SpaceX.com
+                    </a>
             </div>
             
             {/* burger menu */}
@@ -53,9 +61,9 @@ const Navbar = () => {
                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round"
                 strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
             </div>
-
-            {/* dropdown */}
         </nav>
+            
+            {/* dropdown */}
             {nav? <Dropdown/>: <></>}
         </>
     )
