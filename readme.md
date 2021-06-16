@@ -1,5 +1,4 @@
-# 99minutos Frontend Engineer Interview
-Interview test for Frontend Software Engineers
+# 📦 99minutos Frontend Test
 
 ## Welcome!
 If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
@@ -18,7 +17,7 @@ This is a quick coding challenge we designed to assess your qualifications as a 
 To get started with this challenge: 
 1) Fork this repository.
 2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
-3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/PL/SR).
+3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/SR).
 
 ## The Challenge
 We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
@@ -31,30 +30,37 @@ Please include a ``INSTRUCTIONS.md``:
 - What would you do differently if you were allocated more time
 
 ## Details
-Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on this [wireframe](https://bit.ly/2SwvPSP). Use your creativity to choose colors etc...
+Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on the following wireframe. Use your creativity to choose colors etc...
 
-### Routes
-#### Dashboard
+![Test Wireframe](wireframe-test.png "Test Wireframe")
+
+### The app
+#### Last Launches Component
 - List the last 10 missions
-- Clicking on the card, goes to the **Mission** route
+- Clicking on the card, shows the **Mission** on right component
+- Indicate what is the selected card
 
-#### Mission
+#### Mission Component
 - Details of the mission (image, etc...)
 - Button to external link
 
 ## Required
 - Vue or React or Angular
-- TDD (only PL/SR)
+- TDD (only SR)
+- Responsive
 
 ## Desirable
-- Vue using apollo client
+- React using apollo client
 
 ## Deliverables
 We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
 
 ### Bonus points
 - Your code has tests.
+- Perfect Pixel
+- UI/UX Improvements
+- Clean Code
 
 If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact jonathan@99minutos.com or carlos.ramirez@99minutos.com
+If you have any question please contact eduardo.carrada@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
 Happy coding!
