@@ -47,7 +47,7 @@ Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a proj
 ## Required
 - Vue or React or Angular
 - TDD (only SR)
-- Responsive
+- Responsive (Otional for JR / Required for SR)
 
 ## Desirable
 - React using apollo client
@@ -62,5 +62,5 @@ We expect this test to take around 4 hours, but not significantly more (your tim
 - Clean Code
 
 If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact eduardo.carrada@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
+If you have any question please contact eduardo.carrada@99minutos.com, isabel@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
 Happy coding!
