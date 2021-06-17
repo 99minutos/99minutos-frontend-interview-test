@@ -1,0 +1,20 @@
+.Card {
+  padding: 10px;
+  border: 2px solid var(--color-white-primary);
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Card h2 {
+  margin-bottom: 10px;
+}
+
+.Card p {
+  margin-bottom: 10px;
+}
+
+.Card em {
+  float: right;
+  font-style: italic;
+}

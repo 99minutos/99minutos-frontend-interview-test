@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Snapshot Check UI of component Modal 1`] = `
+<div
+  className="Modal"
+>
+  <div
+    className="Modal--container"
+  >
+    <button
+      className="Modal--close-button"
+    >
+      X
+    </button>
+    <img
+      alt=""
+      src=""
+    />
+    <div
+      className="Modal--content"
+    >
+      <h2>
+        
+      </h2>
+      <p>
+        Details omitted
+      </p>
+      <a
+        href=""
+        target="_blank"
+      >
+        See more
+      </a>
+    </div>
+  </div>
+</div>
+`;

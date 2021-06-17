@@ -1,0 +1,80 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS CUSTOM PROPERTIES BEGIN */
+
+:root {
+  --color-white-primary: #F3F3F3;
+  --color-black-primary: #060503;
+
+  --body-font: 'Roboto', sans-serif;
+  --font-size-large: 28px;
+  --font-size-medium: 22px;
+}
+
+/* CSS CUSTOM PROPERTIES END */
+
+body {
+  padding: 20px;
+  background-color: var(--color-black-primary);
+  font-family: var(--body-font);
+  color: var(--color-white-primary);
+  background-image: url('../images/space.jpeg');
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+
+.Error {
+  text-align: center;
+}
