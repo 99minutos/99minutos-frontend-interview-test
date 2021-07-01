@@ -6,25 +6,22 @@ body,
 }
 
 .main-container {
-  height: 70vh;
   width: 95%;
   margin: 1rem;
-  display: flex;
+  display: table;
   justify-content: center;
   align-items: center;
+  height: max-content;
 }
 
 .launches {
   height: 100%;
   border: 1px solid #0a293d;
+  display: table-cell;
 }
 .mission {
   height: 100%;
-}
-
-.imageMission,
-.infoMission {
-  height: 50%;
-  width: 100%;
+  width: auto;
+  display: table-cell;
   border: 1px solid #0a293d;
 }
