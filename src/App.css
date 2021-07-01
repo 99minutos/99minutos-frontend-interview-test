@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+body,
+#root {
+  margin: 0;
+  font-family: "Roboto", Courier, monospace;
+}
+
+.main-container {
+  width: 95%;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+}
+
+#titleLaunches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.launches {
+  height: 100%;
+  border: 1px solid #0a293d;
+}
+
+.size {
+  height: 600px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.infoMission {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0a293d;
+}
+.missionParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.missionItem {
+  width: 90%;
+  border: 1px solid #0a293d;
+  margin: 0.5rem;
+}
