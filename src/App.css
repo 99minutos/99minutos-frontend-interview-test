@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+body,
+#root {
+  margin: 0;
+  font-family: "Roboto", Courier, monospace;
+}
+
+.main-container {
+  height: 70vh;
+  width: 95%;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.launches {
+  height: 100%;
+  border: 1px solid #0a293d;
+}
+.mission {
+  height: 100%;
+}
+
+.imageMission,
+.infoMission {
+  height: 50%;
+  width: 100%;
+  border: 1px solid #0a293d;
+}
