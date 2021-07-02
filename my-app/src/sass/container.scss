@@ -75,16 +75,6 @@ body{
         border-top-right-radius: 10px;
 
     }
-    .blend{
-        background: linear-gradient(
-            146deg
-            , black 0%, white 100%);
-                position: absolute;
-                width: 100%;
-                top: 0px;
-                height: -webkit-fill-available;
-                opacity: 0.5;    
-            }
 }
 .TextContainer{
     grid-area: 2 / 2 / 3 / 3;
