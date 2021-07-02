@@ -1,0 +1,17 @@
+@import "variables";
+
+.Card{
+    margin: 1rem;
+    position: relative;
+    height: auto;
+    background: #00000075;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: small;
+    cursor: pointer;
+    span{
+        float: right;
+        font-size: 10px;
+    }
+}
