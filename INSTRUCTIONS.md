@@ -1,8 +1,8 @@
 # PRINTS
 
-Print: !Print(https://github.com/MartinDCalderonP/99minutos-frontend-interview-test/blob/JR-martincalderon/src/images/print1.png?raw=true)
+Print: (https://github.com/MartinDCalderonP/99minutos-frontend-interview-test/blob/JR-martincalderon/src/images/print1.png?raw=true)
 
-Print with Detail: !PrintWithDetail(https://github.com/MartinDCalderonP/99minutos-frontend-interview-test/blob/JR-martincalderon/src/images/print2.png?raw=true)
+Print with Detail: (https://github.com/MartinDCalderonP/99minutos-frontend-interview-test/blob/JR-martincalderon/src/images/print2.png?raw=true)
 
 # TECHNOLOGIES
 
