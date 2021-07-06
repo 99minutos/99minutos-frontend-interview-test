@@ -1,0 +1,16 @@
+.cardsList {
+	flex: 0.4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #000000;
+	border-right: 0px;
+	padding: 10px 0px 20px;
+}
+
+.cardList__circularProgress{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
