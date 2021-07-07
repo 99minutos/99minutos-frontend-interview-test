@@ -59,3 +59,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 1° For the mobile version, add a carousel component to show the 10 elements and save space in the UI
 2° Change to Next.js and in "getServerSideProps" make the request to the API, thus saving loading time
 Migrating to Next.js would be easy, I built my code so that it is easy to do the migration
+
+![alt text](https://raw.githubusercontent.com/jacobo1407b/99minutos-frontend-interview-test/JR-JACOBOHM/public/Captura%20de%20pantalla%20de%202021-07-06%2022-46-49.png)
+
+![alt text](https://raw.githubusercontent.com/jacobo1407b/99minutos-frontend-interview-test/JR-JACOBOHM/public/Captura%20de%20pantalla%20de%202021-07-06%2022-47-53.png)
+
+![alt text](https://github.com/jacobo1407b/99minutos-frontend-interview-test/blob/JR-JACOBOHM/public/Captura%20de%20pantalla%20de%202021-07-06%2022-48-42.png)
