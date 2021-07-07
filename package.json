@@ -28,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "tests:coverage": "react-scripts test --coverage",
     "eject": "NODE_PATH=src/ react-scripts eject"
   },
   "eslintConfig": {
