@@ -1,0 +1,25 @@
+.detail {
+	flex: 0.6;
+	text-align: center;
+	border: 2px solid #000000;
+}
+
+.detail__circularProgress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+}
+
+.detail__video {
+	height: 50vh;
+}
+
+.detail__info {
+	border-top: 2px solid #000;
+	padding: 10px 30px;
+}
+
+.detail__details {
+	margin: 10px 0px;
+}

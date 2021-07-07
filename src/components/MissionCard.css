@@ -1,0 +1,22 @@
+.missionCard {
+	width: 80%;
+	margin: 10px 0px;
+	border: 2px solid #000000;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 3s;
+}
+
+.missionCard.selected {
+	background-color: #505050;
+}
+
+.missionCard:hover {
+	background-color: #707070;
+}
+
+.missionCard__date {
+	display: flex;
+	justify-content: flex-end;
+	color: #909090;
+}

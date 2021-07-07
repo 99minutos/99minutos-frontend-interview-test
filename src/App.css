@@ -1,0 +1,11 @@
+.App {
+    display: flex;
+    background-color: #fff;
+    margin: 50px 30px;
+}
+
+@media (max-width: 700px) {
+    .App {
+        flex-direction: column;
+    }
+}
