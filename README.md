@@ -39,32 +39,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Why react
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1° Reusable components
+2° We can do isomorphic applications
+3° Easy integration with redux
+4° Ease of generating mobile apps with the same JavaScript code
+5° Virtual DOM and optimized loading
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Upgrades
 
-### Code Splitting
+1° Relative imports
+2° Rendering on the server
+3° UI component showing all 10 items, hide scroll
+4° In the mobile version, the component of the 10 items could be smaller
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# What would you do differently if you were allocated more time?
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1° For the mobile version, add a carousel component to show the 10 elements and save space in the UI
+2° Change to Next.js and in "getServerSideProps" make the request to the API, thus saving loading time
+Migrating to Next.js would be easy, I built my code so that it is easy to do the migration
