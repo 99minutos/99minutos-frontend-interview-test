@@ -1,0 +1,133 @@
+.App {
+  display: flex;
+  background-color: rgb(111, 178, 34);
+  width: 100vw;
+  height: 100vh;
+  min-width: 600px;
+  font-size: calc(5px + 0.5vw);
+
+}
+
+h2 {
+  font-size: calc(17px + 1vw) !important;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  width: 94%;
+  height: 80%;
+  background-color: blue;
+  min-width: 570px;
+  box-shadow: 5px 10px 20px #050505;
+}
+
+.izquierda {
+  background-color: purple;
+  flex-basis: 30%;
+}
+
+.derecha {
+  background-color: blue;
+  flex-basis: 70%;
+}
+
+.title {
+  background-color: aqua;
+  margin: auto;
+  text-align: center;
+}
+
+.izquierda-abajo {
+  background-color: orange;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.scroll {
+  background-color: red;
+  flex-basis: 80%;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: green;
+  width: 80%;
+  height: 12vh;
+  min-height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-areas:
+    "card-icono card-title"
+    "card-icono card-text"
+    "card-icono card-fecha";
+  grid-template-rows: 1fr 2.5fr 1fr;
+  grid-template-columns: 2fr 5fr;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.card:last-child {
+  margin-bottom: 15px;
+}
+
+.card:first-child {
+  margin-top: 3px;
+}
+
+.card-icono {
+  grid-area: card-icono;
+  justify-self: center;
+  align-self: center;
+  font-size: calc(20px + 1.5vw);
+}
+
+.card-title {
+  grid-area: card-title;
+  padding-left: 5px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;  
+  text-overflow: ellipsis;
+}
+
+.card-text {
+  grid-area: card-text;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.card-fecha {
+  grid-area: card-fecha;
+  justify-self: end;
+  padding-right: 5px;
+  color: rgba(105, 234, 248, 0.775);
+}
+
+.title > h2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* beauty */
+
+.card:hover {
+  background-color: rgb(0, 255, 221);
+}
+
+.card:focus {
+  background-color: orange;
+}
+
+.card:active {
+  background-color: blue;
+}
+
+.selected {
+  background-color: deeppink;
+}
