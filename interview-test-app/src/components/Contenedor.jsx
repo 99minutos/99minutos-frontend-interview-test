@@ -6,6 +6,12 @@ import { api_getLastLaunches } from "../apiCalls/api_getLastLaunches";
 
 export const Contenedor = () => {
   const [apiData, setApiData] = useState([]);
+  const [selectedMission, setSelectedMission] = useState({});
+
+  const callbackSetSelectedMission=(missionName)=>{
+    const mission=apiData.find(mission=>missionName===mission.mission_name)
+    setSelectedMission(mission)
+  }
 
   const loadApiData = async () => {
     const res = await api_getLastLaunches();
@@ -21,8 +27,8 @@ export const Contenedor = () => {
   return (
     <>
       <div className="container">
-        <LastLaunches apiData={apiData}/>
-        <Mission apiData={apiData}/>
+        <LastLaunches apiData={apiData} callbackSetSelectedMission={callbackSetSelectedMission}/>
+        <Mission apiData={apiData} selectedMission={selectedMission}/>
       </div>
     </>
   );

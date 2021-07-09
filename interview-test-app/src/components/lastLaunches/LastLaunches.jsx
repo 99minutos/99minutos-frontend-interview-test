@@ -1,7 +1,7 @@
 import Cards from "./cards/Cards";
 import { useState, useEffect } from "react";
 
-export const LastLaunches = ({ apiData }) => {
+export const LastLaunches = ({ apiData, callbackSetSelectedMission }) => {
   const [selectedCardTitle, setSelectedCardTitle] = useState("");
   const [cardsData, setCardsData] = useState([]);
 
@@ -33,6 +33,7 @@ export const LastLaunches = ({ apiData }) => {
                 selectedCardTitle={selectedCardTitle}
                 setSelectedCardTitle={(e) => {
                   setSelectedCardTitle(e);
+                  callbackSetSelectedMission(e)
                 }}
                 data={data}
                 key={data.title}
