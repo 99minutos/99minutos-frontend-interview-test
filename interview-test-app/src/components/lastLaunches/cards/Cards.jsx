@@ -22,13 +22,13 @@ const Cards = ({ selectedCardTitle, setSelectedCardTitle, data, id }) => {
 
   return (
     <>
-      <div className="card" id={id} onClick={handleClick} tabIndex="-1">
-        <div className="card-icono">
+      <div className="custom-card" id={id} onClick={handleClick} tabIndex="-1">
+        <div className="custom-card-icono">
           <FaRocket />
         </div>
-        <div className="card-title">{data.title}</div>
-        <div className="card-text">{data.launchSite}</div>
-        <div className="card-fecha">{data.date}</div>
+        <div className="custom-card-title">{data.title}</div>
+        <div className="custom-card-text">{data.launchSite}</div>
+        <div className="custom-card-fecha">{data.date}</div>
       </div>
     </>
   );

@@ -5,15 +5,10 @@
   height: 100vh;
   min-width: 600px;
   min-height: 420px;
-  font-size: calc(5px + 0.5vw);
-
+  font-size: calc(0.35em + 0.5vw);
 }
 
-h2 {
-  font-size: calc(17px + 1vw) !important;
-}
-
-.container {
+.custom-container {
   display: flex;
   flex-flow: row nowrap;
   margin: auto;
@@ -35,31 +30,37 @@ h2 {
   flex-basis: 70%;
   display: flex;
   flex-flow: column nowrap;
-  /* justify-items: center;
-  align-items: center; */
   text-align: center;
-}
-
-.top{
-  border: 2px solid red;
-  flex-basis: 60%;
-}
-
-.bottom{
-  flex-basis: 40%;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-
 }
 
-.bottom button{
-  margin-bottom: 10px;
+.top {
+  border: 2px solid red;
+  flex-basis: 60%;
+  display: flex;
+  flex-shrink: 3;
+}
+
+.derecha > h1 {
+  flex-basis: 5%;
+  align-items: center;
+}
+
+.derecha > main {
+  margin: auto;
+  width: 90%;
+  flex-basis: 20%;
+  overflow-y: auto;
+}
+
+.derecha a {
+  flex-basis: 5%;
+  margin-top: 1em;
+  margin-bottom: 1em;
   cursor: pointer;
+  align-self: center;
 }
-
-
-
 
 .title {
   background-color: aqua;
@@ -82,7 +83,7 @@ h2 {
   overflow-y: auto;
 }
 
-.card {
+.custom-card {
   background-color: green;
   width: 80%;
   height: 12vh;
@@ -92,47 +93,47 @@ h2 {
   margin-bottom: 8px;
   display: grid;
   grid-template-areas:
-    "card-icono card-title"
-    "card-icono card-text"
-    "card-icono card-fecha";
+    "custom-card-icono custom-card-title"
+    "custom-card-icono custom-card-text"
+    "custom-card-icono custom-card-fecha";
   grid-template-rows: 1fr 2.5fr 1fr;
   grid-template-columns: 2fr 5fr;
   cursor: pointer;
   border-radius: 2px;
 }
 
-.card:last-child {
+.custom-card:last-child {
   margin-bottom: 15px;
 }
 
-.card:first-child {
+.custom-card:first-child {
   margin-top: 3px;
 }
 
-.card-icono {
-  grid-area: card-icono;
+.custom-card-icono {
+  grid-area: custom-card-icono;
   justify-self: center;
   align-self: center;
   font-size: calc(20px + 1.5vw);
 }
 
-.card-title {
-  grid-area: card-title;
+.custom-card-title {
+  grid-area: custom-card-title;
   padding-left: 5px;
   font-weight: 700;
   overflow: hidden;
-  white-space: nowrap;  
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.card-text {
-  grid-area: card-text;
+.custom-card-text {
+  grid-area: custom-card-text;
   padding-left: 5px;
   overflow: hidden;
 }
 
-.card-fecha {
-  grid-area: card-fecha;
+.custom-card-fecha {
+  grid-area: custom-card-fecha;
   justify-self: end;
   padding-right: 5px;
   color: rgba(105, 234, 248, 0.775);
@@ -145,18 +146,25 @@ h2 {
 
 /* beauty */
 
-.card:hover {
+.custom-card:hover {
   background-color: rgb(0, 255, 221);
 }
 
-.card:focus {
+.custom-card:focus {
   background-color: orange;
 }
 
-.card:active {
+.custom-card:active {
   background-color: blue;
 }
 
 .selected {
   background-color: deeppink;
+}
+
+.center {
+  max-width: 70%;
+  height: 45.12vh;
+  margin: auto;
+  min-height: 205px;
 }

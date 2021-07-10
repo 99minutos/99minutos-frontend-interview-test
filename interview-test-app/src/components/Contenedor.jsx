@@ -26,9 +26,9 @@ export const Contenedor = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="custom-container">
         <LastLaunches apiData={apiData} callbackSetSelectedMission={callbackSetSelectedMission}/>
-        <Mission apiData={apiData} selectedMission={selectedMission}/>
+        <Mission selectedMission={selectedMission}/>
       </div>
     </>
   );
