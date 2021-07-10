@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import logo from '../../../logo.png'
+import { NavBarLogo } from '../../ui/styled-components/image'
 
 export const NavBar = () => {
     return (
@@ -52,10 +53,4 @@ const NavBarBrand = styled.div`
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
-`
-const NavBarLogo = styled.img`
-    display: inline-block;
-    vertical-align: middle;
-    border: 0;
-    line-height: 50px;
 `
