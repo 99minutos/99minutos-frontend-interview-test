@@ -7,12 +7,14 @@ export const Mission = ({ selectedMission }) => (
         <div className="top">
           <CustomCarousel images={selectedMission?.links?.flickr_images} />
         </div>
-        <h1 style={{margin:"auto"}}>{selectedMission.mission_name || "Select a Card"}</h1>
+        <h1 style={{ margin: "auto" }}>
+          {selectedMission.mission_name || "Select a Card"}
+        </h1>
         <main>{selectedMission.details || "no further details :("}</main>
         <a
           href={selectedMission.links.video_link}
           target="_blank"
-          className="btn btn-primary"
+          className="btn btn-secondary"
           rel="noreferrer"
         >
           See More

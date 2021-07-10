@@ -1,4 +1,4 @@
-export const CARDS_TEST_DATA = [
+export const TEST_DATA = [
   {
     title: "title1",
     description: "description1",

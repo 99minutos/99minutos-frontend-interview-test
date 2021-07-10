@@ -6,6 +6,20 @@
   min-width: 600px;
   min-height: 420px;
   font-size: calc(0.35em + 0.5vw);
+  background-image: url("./shared/bg-space.png");
+}
+
+.no-image-found {
+  margin: auto;
+  background-image: url("./shared/bg-no-image-found.jpg");
+  width: 100%;
+  height: 45.12vh;
+  display: flex;
+}
+
+.no-image-found > h1 {
+  margin: auto;
+  color: azure;
 }
 
 .custom-container {
@@ -17,7 +31,8 @@
   background-color: blue;
   min-width: 570px;
   min-height: 390px;
-  box-shadow: 5px 10px 20px #050505;
+  box-shadow: 5px 10px 20px #050505c9;
+  border: 3px solid rgb(140, 138, 138);
 }
 
 .izquierda {
@@ -26,7 +41,8 @@
 }
 
 .derecha {
-  background-color: blue;
+  background-color: black;
+  color: white;
   flex-basis: 70%;
   display: flex;
   flex-flow: column nowrap;
@@ -36,7 +52,10 @@
 }
 
 .top {
-  border: 2px solid red;
+  border: 2px solid rgb(140, 138, 138);
+  background-color: black;
+  border-top: 0px;
+  border-right: 0px;
   flex-basis: 60%;
   display: flex;
   flex-shrink: 3;
@@ -63,14 +82,14 @@
 }
 
 .title {
-  background-color: aqua;
   margin: auto;
+  color: azure;
   text-align: center;
   user-select: none;
 }
 
 .izquierda-abajo {
-  background-color: orange;
+  background-color: #2d2661;
   height: 100%;
   width: 100%;
   display: flex;
@@ -78,13 +97,13 @@
 }
 
 .scroll {
-  background-color: red;
+  background-color: #2d2661;
   flex-basis: 80%;
   overflow-y: auto;
 }
 
 .custom-card {
-  background-color: green;
+  background-color: #6d5ced;
   width: 80%;
   height: 12vh;
   min-height: 70px;
@@ -147,19 +166,20 @@
 /* beauty */
 
 .custom-card:hover {
-  background-color: rgb(0, 255, 221);
+  background-color: #877be1;
 }
 
 .custom-card:focus {
-  background-color: orange;
+  background-color: #e640f0;
 }
 
 .custom-card:active {
-  background-color: blue;
+  /* background-color:  #567FF0; */
+  background-color: white;
 }
 
 .selected {
-  background-color: deeppink;
+  background-color: #d686f0;
 }
 
 .center {

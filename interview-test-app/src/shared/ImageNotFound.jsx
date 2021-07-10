@@ -1,10 +1,9 @@
+const ImageNotFound = () => {
+  return (
+    <div class="no-image-found">
+      <h1 style={{ userSelect: "none" }}>There are no images :(</h1>
+    </div>
+  );
+};
 
-const ImageNotFound=()=> {
-    return (
-        <div style={{margin:"auto", fontSize:"30px", fontWeight:"500"}}>
-        There are no images :(
-        </div>
-    )
-}
-
-export default ImageNotFound
+export default ImageNotFound;
