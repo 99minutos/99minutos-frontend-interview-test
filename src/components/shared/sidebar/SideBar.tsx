@@ -28,11 +28,13 @@ export const SideBar = () => {
 const SideBarWrapper = styled.div`
     padding: 30px;
     border: 1px solid #2f373e;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 
     & h1{
         text-align: center;
         color: #2f373e;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 `
