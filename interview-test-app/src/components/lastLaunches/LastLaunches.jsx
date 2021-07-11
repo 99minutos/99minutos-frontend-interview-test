@@ -1,22 +1,21 @@
+import React from "react"
 import Cards from "./cards/Cards";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import {transformDate} from "../../shared/transformDate"
 
 export const LastLaunches = ({ apiData, callbackSetSelectedMission }) => {
   const [selectedCardTitle, setSelectedCardTitle] = useState("");
   const [cardsData, setCardsData] = useState([]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const newData = apiData.map((element) => {
-      const [año, mes, rest] = element.launch_date_local.split("-");
-      const dia = rest.substring(0, 2);
-      const date = `${dia}/${mes}/${año}`;
-      const dateForSorting = `${año}${mes}${dia}`;
+      const date = element.launch_date_local
 
       return {
         title: element.mission_name,
         launchSite: element.launch_site.site_name_long,
-        date: date,
-        dateForSorting: dateForSorting,
+        date: transformDate(date),
+        dateForSorting: transformDate(date,{needToSort:true}),
       };
     });
 
@@ -25,7 +24,6 @@ export const LastLaunches = ({ apiData, callbackSetSelectedMission }) => {
   }, [apiData]);
 
   return (
-    <>
       <div className="izquierda">
         <div className="izquierda-abajo">
           <div className="title">
@@ -33,22 +31,21 @@ export const LastLaunches = ({ apiData, callbackSetSelectedMission }) => {
           </div>
 
           <div className="scroll">
-            {cardsData.map((data) => (
+            {cardsData.map((card) => (
               <Cards
                 selectedCardTitle={selectedCardTitle}
                 setSelectedCardTitle={(e) => {
                   setSelectedCardTitle(e);
                   callbackSetSelectedMission(e);
                 }}
-                data={data}
-                key={data.title}
-                id={data.title}
+                data={card}
+                key={card.title}
+                id={card.title}
               />
             ))}
           </div>
         </div>
       </div>
-    </>
   );
 };
 

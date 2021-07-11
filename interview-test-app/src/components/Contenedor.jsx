@@ -16,8 +16,6 @@ export const Contenedor = () => {
 
   const loadApiData = async () => {
     const res = await api_getLastLaunches();
-
-    console.log(res.data.launchesPast);
     setApiData(res.data.launchesPast);
   };
 
@@ -26,15 +24,13 @@ export const Contenedor = () => {
   }, []);
 
   return (
-    <>
-      <div className="custom-container">
-        <LastLaunches
-          apiData={apiData}
-          callbackSetSelectedMission={callbackSetSelectedMission}
-        />
-        <Mission selectedMission={selectedMission} />
-      </div>
-    </>
+    <div className="custom-container">
+      <LastLaunches
+        apiData={apiData}
+        callbackSetSelectedMission={callbackSetSelectedMission}
+      />
+      <Mission selectedMission={selectedMission} />
+    </div>
   );
 };
 

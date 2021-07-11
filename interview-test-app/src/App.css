@@ -1,6 +1,6 @@
 .App {
   display: flex;
-  background-color: rgb(111, 178, 34);
+  background-color: black;
   width: 100vw;
   height: 100vh;
   min-width: 600px;
@@ -49,10 +49,11 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  border-left: 2px solid rgb(140, 138, 138);
 }
 
 .top {
-  border: 2px solid rgb(140, 138, 138);
+  border-bottom: 2px solid rgb(140, 138, 138);
   background-color: black;
   border-top: 0px;
   border-right: 0px;
