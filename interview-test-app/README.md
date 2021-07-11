@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# 99minutos Frontend Test
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![img App](print-launches-1.png "img App")
 
 ## Available Scripts
 
@@ -19,52 +21,29 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## USED TECHNOLOGIES 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+An excellent library which I use to develop small-medium size applications for its ease of use and 
+reduced boilerplate to go straight to the coding part with great performance.
 
-### `npm run eject`
+#### Bootstrap, React-bootstrap & React-icons
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I mainly used CSS3 Flexbox and Grids to achieve my layout and responsiveness but do all from scratch requires more time so I used
+a few bootstrap components, this way I don't have to overwrite the bootstrap classes if I need a more custom Layout.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I used react-icons which has a collection of great icons libraries.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Jest, Enzyme & React Testing Library
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To develop tests I used Jest to test JS functions, Enzyme to test React components and React Testing Library to do snapshots tests
 
-## Learn More
+## IMPROVEMENTS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I could have done more test cases 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## WHAT COULD HAVE BEEN DONE DIFFERENTLY?
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would have implemented more UI responsive layouts for more screen devices
