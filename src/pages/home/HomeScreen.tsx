@@ -28,10 +28,11 @@ const HomeWrapper = styled.div`
 `
 
 const MainWrapper = styled.div`
-    margin-top: 30px;
+
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     background-color: #ffffffca;
     border: 1px solid #dadde1;
