@@ -18,6 +18,9 @@ export const MainPanel = () => {
 }
 
 const MainPanelWrapper = styled.div`
+    height: 70vh;
+    overflow: auto;
+    margin-bottom: 20px;
     padding: 30px;
     border: 1px solid #2f373e;
     border-radius: 0 10px 10px 0;
