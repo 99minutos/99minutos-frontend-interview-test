@@ -17,7 +17,7 @@ npx serve -s build -p PORT
 ```
 after a couple seconds, we will have deployed locally the application in a route like the following:
 
-![Local route](print-launches-2.png "Local route")
+![Local route](print-launches-2.PNG "Local route")
 
 if for some reason you want to run in without using the build folder you can open a command prompt 
 inside interview-test-app folder and run
