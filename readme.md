@@ -1,66 +1,79 @@
-# 📦 99minutos Frontend Test
+![ReactJs](https://img.shields.io/badge/React-Js-blue)
+![Redux](https://img.shields.io/badge/Redux-%5E4.1.0-blueviolet)
+![Apollo](https://img.shields.io/badge/Apollo-%5E3.3.21-informational)
+<p align="center">
+  <h3 align="center">Frontend test</h3>
+</p>
 
-## Welcome!
-If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#technologies">Technologies</a></li>
+    <li><a href="#improvements">Improvements</a></li>
+    <li><a href="#different">Different</a></li>
+    <li><a href="#screens">Screens</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-This README provides the instructions to a small, self-contained test for a Frontend Software Engineer position.
+### Built With
 
-## What we're looking for
-We're looking for a talented and driven frontend developer, comfortable with building responsive front end experiences.
+* [Apollo Client](https://www.apollographql.com/docs/react/)
+* [ReactJs](https://es.reactjs.org/)
+* [Redux](https://redux.js.org/)
 
-Experience building responsive, elegant and scalable web applications; understand cross-browser/platform compatibility issues.
 
-# 🚀 Front-End Challenge
-This is a quick coding challenge we designed to assess your qualifications as a potential front-end developer. It's important to note that this is by no means a test. We just want to get a sense of how you write code and solve problems.
+### Installation
 
-## Getting started
-To get started with this challenge: 
-1) Fork this repository.
-2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
-3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/SR).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ClawGibson/FrontEnd-Test
+   ```
+2. Install dependencies
+   ```sh
+   yarn
+   ```
+3. Run
+   ```.env
+   yarn start
+   ```
 
-## The Challenge
-We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
+### Technologies
+<h3>How did you decide which technologies to use as part of your solution</h3>
+<p>
+  I decided to use React because his server side rendering and his compatibily with Redux to provide the fetched data.
+</p>
 
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+### Improvements
+<h3>Are there any improvements you could make to your submission</h3>
+<p>
+  I would love to add more animations to make the user interaction more comfortable, and fix the video player.
+</p>
 
-## Details
-Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on the following wireframe. Use your creativity to choose colors etc...
+### Different
+<h3>What would you do differently if you were allocated more time</h3>
+<p>
+  Thats probably would be the button. Also create some effects to selected card. 
+</p>
 
-![Test Wireframe](wireframe-test.png "Test Wireframe")
+### Screens
 
-### The app
-#### Last Launches Component
-- List the last 10 missions
-- Clicking on the card, shows the **Mission** on right component
-- Indicate what is the selected card
+<img src="screenshots/Screenshot_13.png" alt="Logo" width="100%" height="100%">
+<br/ >
+<img src="screenshots/Screenshot_14.png" alt="Logo" width="100%" height="100%">
+<br/ >
+<img src="screenshots/Screenshot_15.png" alt="Logo" width="100%" height="100%">
+<br/ >
+<img src="screenshots/Screenshot_16.png" alt="Logo" width="100%" height="100%">
+<br/ >
+<img src="screenshots/Screenshot_17.png" alt="Logo" width="100%" height="100%">
+<br/ >
+<img src="screenshots/Screenshot_18.png" alt="Logo" width="100%" height="100%">
+<br/ >
 
-#### Mission Component
-- Details of the mission (image, etc...)
-- Button to external link
+<!-- CONTACT -->
+## Contact
 
-## Required
-- Vue or React or Angular
-- TDD (only SR)
-- Responsive (Otional for JR / Required for SR)
-
-## Desirable
-- React using apollo client
-
-## Deliverables
-We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
-
-### Bonus points
-- Your code has tests.
-- Perfect Pixel
-- UI/UX Improvements
-- Clean Code
-
-If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact eduardo.carrada@99minutos.com, isabel@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
-Happy coding!
+Gamaliel Bernal - [Gamaliel Joaquín] - gamalielbj@gmail.com
