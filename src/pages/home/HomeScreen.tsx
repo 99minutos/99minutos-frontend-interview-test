@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from "styled-components";
 import { NavBar } from '../../components/shared/navbar/NavBar';
 import { SideBar } from '../../components/shared/sidebar/SideBar';
 import { MainPanel } from '../../components/ui/mainPanel/MainPanel';
+import { useQuery } from '@apollo/client';
+import { GET_LAUNCHES_PAST } from '../../graphql/queries/LaunchesPast';
+import { useState } from 'react';
 
 
 export const HomeScreen = () => {
+
+    const [rocketList, setRocketList] = useState([])
+
+    const { data, loading, error } = useQuery( GET_LAUNCHES_PAST )
+
+    useEffect(() => {
+
+        if(!loading) {
+            setRocketList(data.launchesPast)
+        }
+    }, [loading, data])
+
+
     return (
         <HomeWrapper>
 
