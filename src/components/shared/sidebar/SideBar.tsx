@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import { Scrollbars } from 'react-custom-scrollbars';
 import { RocketThumb } from '../../ui/rocketThumb/RocketThumb';
 
 export const SideBar = () => {
@@ -7,18 +8,21 @@ export const SideBar = () => {
         <SideBarWrapper>
             <h1>Last Launches</h1>
 
-            <SideBarRockets>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-                <RocketThumb/>
-            </SideBarRockets>
+
+            <Scrollbars style={{ width: "100%", height: "100%" }}>
+                <SideBarRockets>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                    <RocketThumb/>
+                </SideBarRockets>
+            </Scrollbars>
 
             
         </SideBarWrapper>
@@ -27,9 +31,10 @@ export const SideBar = () => {
 
 const SideBarWrapper = styled.div`
     height: 70vh;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 20px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border: 1px solid #2f373e;
     border-radius: 10px 0 0 10px;
 
