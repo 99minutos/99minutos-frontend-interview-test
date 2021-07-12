@@ -4,8 +4,9 @@ export interface launchesPastQuery {
 }
 
 export interface LaunchesPast {
+    id:                string;
     mission_name:      string;
-    launch_date_local: Date;
+    launch_date_local: string;
     launch_site:       LaunchSite;
     links:             Links;
     rocket:            Rocket;
