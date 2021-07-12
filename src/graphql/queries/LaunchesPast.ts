@@ -27,6 +27,8 @@ export const GET_LAUNCHES_PAST: DocumentNode = gql`
         home_port
         image
       }
+      id
+      details
       
     }
   }
