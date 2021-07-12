@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import { NavBar } from '../../components/shared/navbar/NavBar';
 import { SideBar } from '../../components/shared/sidebar/SideBar';
-import { MainPanel } from '../../components/shared/mainpanel/MainPanel';
+import { MainPanel } from '../../components/ui/mainPanel/MainPanel';
 
 
 export const HomeScreen = () => {
