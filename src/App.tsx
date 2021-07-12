@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { HomeScreen } from './pages/home/HomeScreen';
 // import ApolloClient from 'apollo-boost';
-import { ApolloClient, InMemoryCache } from '@apollo/client'
-import { ApolloProvider } from '@apollo/react-hooks';
+// import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 const client = new ApolloClient({
 	uri:"https://api.spacex.land/graphql/",
