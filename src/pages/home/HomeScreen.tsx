@@ -6,20 +6,20 @@ import { MainPanel } from '../../components/ui/mainPanel/MainPanel';
 import { useQuery } from '@apollo/client';
 import { GET_LAUNCHES_PAST } from '../../graphql/queries/LaunchesPast';
 import { useState } from 'react';
+import { launchesPastQuery, LaunchesPast } from '../../interfaces/LaunchPast';
 
 
 export const HomeScreen = () => {
 
-    const [rocketList, setRocketList] = useState([])
+    const [launchesPast, setLaunchesPast] = useState<LaunchesPast[]>([])
 
-    const { data, loading, error } = useQuery( GET_LAUNCHES_PAST )
+    const { data, loading, error } = useQuery<launchesPastQuery>( GET_LAUNCHES_PAST )
 
     useEffect(() => {
-
-        if(!loading) {
-            setRocketList(data.launchesPast)
+        if(!loading && !error) {
+            setLaunchesPast(data!.launchesPast)
         }
-    }, [loading, data])
+    }, [loading, data, error])
 
 
     return (
