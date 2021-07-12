@@ -1,10 +1,20 @@
 import React from 'react'
 import styled from "styled-components";
 import { CardWrapper } from '../styled-components/card'
-import rocketImg from '../../../rocket.png'
 import { ImageThumb } from '../styled-components/image';
+import { LaunchesPast } from '../../../interfaces/LaunchPast';
+import { formatDate } from '../../../helpers/date';
+import rocketImg from '../../../rocket.png'
 
-export const RocketThumb = () => {
+interface RocketThumbProps {
+    launchPast: LaunchesPast;
+};
+
+
+
+export const RocketThumb: React.FC<RocketThumbProps> = ({launchPast}) => {
+
+    
     return (
         <CardWrapper>
             <RocketMini>
@@ -16,9 +26,9 @@ export const RocketThumb = () => {
                 />
 
                 <LaunchInfoWraper>
-                    <h3>Starlink-15 (v1.0)</h3>
-                    <p>Cape Canaveral Air Force Station Space Launch Complex 40</p>
-                    <span>2020-10-24T11:31:00-04:00</span>
+                    <h3>{launchPast.mission_name}</h3>
+                    <p>{launchPast.launch_site.site_name_long}</p>
+                    <span>{formatDate(launchPast.launch_date_local)}</span>
                 </LaunchInfoWraper>
             </RocketMini>         
         </CardWrapper>

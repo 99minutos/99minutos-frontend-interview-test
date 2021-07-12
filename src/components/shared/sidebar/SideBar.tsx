@@ -2,8 +2,13 @@ import React from 'react'
 import styled from "styled-components";
 import { Scrollbars } from 'react-custom-scrollbars';
 import { RocketThumb } from '../../ui/rocketThumb/RocketThumb';
+import { LaunchesPast } from '../../../interfaces/LaunchPast';
 
-export const SideBar = () => {
+interface SideBarProps {
+    launches: LaunchesPast[]
+};
+
+export const SideBar: React.FC<SideBarProps> = ({launches}) => {
     return (
         <SideBarWrapper>
             <h1>Last Launches</h1>
@@ -11,16 +16,14 @@ export const SideBar = () => {
 
             <Scrollbars style={{ width: 500 , height: "100%" }}>
                 <SideBarRockets>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
-                    <RocketThumb/>
+                    {
+                        launches.map( (launch:LaunchesPast) =>(
+                            <RocketThumb
+                                key= {launch.id}
+                                launchPast={launch}
+                            />
+                        ))
+                    }
                 </SideBarRockets>
             </Scrollbars>
 

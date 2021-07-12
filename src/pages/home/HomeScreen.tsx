@@ -28,7 +28,10 @@ export const HomeScreen = () => {
             <NavBar/>
 
             <MainWrapper>
-                <SideBar/>
+                <SideBar
+                    launches= {launchesPast}
+                
+                />
                 <MainPanel/>
             </MainWrapper>
 
