@@ -9,7 +9,7 @@ export const SideBar = () => {
             <h1>Last Launches</h1>
 
 
-            <Scrollbars style={{ width: "100%", height: "100%" }}>
+            <Scrollbars style={{ width: 500 , height: "100%" }}>
                 <SideBarRockets>
                     <RocketThumb/>
                     <RocketThumb/>
