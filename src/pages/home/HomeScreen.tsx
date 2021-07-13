@@ -12,6 +12,7 @@ import { launchesPastQuery, LaunchesPast } from '../../interfaces/LaunchPast';
 export const HomeScreen = () => {
 
     const [launchesPast, setLaunchesPast] = useState<LaunchesPast[]>([])
+    const [launchSeletect, setLaunchSeletect] = useState<LaunchesPast | null>(null)
 
     const { data, loading, error } = useQuery<launchesPastQuery>( GET_LAUNCHES_PAST )
 
@@ -28,11 +29,8 @@ export const HomeScreen = () => {
             <NavBar/>
 
             <MainWrapper>
-                <SideBar
-                    launches= {launchesPast}
-                
-                />
-                <MainPanel/>
+                <SideBar launches= {launchesPast} onSelectItem={setLaunchSeletect} />
+                <MainPanel launch= {launchSeletect} />
             </MainWrapper>
 
         </HomeWrapper>

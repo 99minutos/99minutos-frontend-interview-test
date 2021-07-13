@@ -5,10 +5,12 @@ import { RocketThumb } from '../../ui/rocketThumb/RocketThumb';
 import { LaunchesPast } from '../../../interfaces/LaunchPast';
 
 interface SideBarProps {
-    launches: LaunchesPast[]
+    launches: LaunchesPast[];
+    onSelectItem: (launch:LaunchesPast)=> void;
 };
 
-export const SideBar: React.FC<SideBarProps> = ({launches}) => {
+export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
+
     return (
         <SideBarWrapper>
             <h1>Last Launches</h1>
@@ -21,6 +23,7 @@ export const SideBar: React.FC<SideBarProps> = ({launches}) => {
                             <RocketThumb
                                 key= {launch.id}
                                 launchPast={launch}
+                                onSelectItem = {onSelectItem}
                             />
                         ))
                     }
