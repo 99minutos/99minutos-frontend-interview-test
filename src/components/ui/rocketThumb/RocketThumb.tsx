@@ -8,15 +8,18 @@ import rocketImg from '../../../rocket.png'
 
 interface RocketThumbProps {
     launchPast: LaunchesPast;
+    onSelectItem: (launch:LaunchesPast)=> void;
 };
 
 
 
-export const RocketThumb: React.FC<RocketThumbProps> = ({launchPast}) => {
+export const RocketThumb: React.FC<RocketThumbProps> = ({launchPast, onSelectItem}) => {
 
     
     return (
-        <CardWrapper>
+        <CardWrapper
+            onClick={()=>onSelectItem(launchPast)}
+        >
             <RocketMini>
                 <ImageThumb
                     src={rocketImg}

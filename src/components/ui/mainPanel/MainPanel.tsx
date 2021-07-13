@@ -2,12 +2,17 @@ import React from 'react'
 import styled from "styled-components";
 import { DetailCard } from '../detailCard/DetailCard';
 import { SeeMoreCard } from '../seeMoreCard/SeeMoreCard';
+import { LaunchesPast } from '../../../interfaces/LaunchPast';
 
-export const MainPanel = () => {
+interface MainPanelProps {
+    launch: LaunchesPast | null;
+};
+
+export const MainPanel: React.FC<MainPanelProps> = ({launch}) => {
     return (
         <MainPanelWrapper>          
-            <DetailCard/>
-            <SeeMoreCard/>                    
+            <DetailCard launch={launch} />
+            <SeeMoreCard launch={launch} />                    
         </MainPanelWrapper>
     )
 }

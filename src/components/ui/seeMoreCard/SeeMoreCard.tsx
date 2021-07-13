@@ -2,21 +2,35 @@ import React from 'react'
 import styled from "styled-components";
 import { CardWrapper } from '../styled-components/card';
 import { Button } from '../styled-components/button';
+import { LaunchesPast } from '../../../interfaces/LaunchPast';
+import { Scrollbars } from 'react-custom-scrollbars';
 
-export const SeeMoreCard = () => {
+interface SeeMoreCardProps {
+    launch: LaunchesPast | null;
+};
+
+
+export const SeeMoreCard: React.FC<SeeMoreCardProps> = ({launch}) => {
+
+
     return (
         <Panel>
-            <h3>Starlink-15 (v1.0)</h3>
-            <p>This mission will launch the thirteenth batch of operational 
-                Starlink satellites, which are expected to be version 1.0, from LC-39A, 
-                Kennedy Space Center. It is the fourteenth Starlink launch overall. 
-                The satellites will be delivered to low Earth orbit and will spend a 
-                few weeks maneuvering to their operational altitude of 550 km. 
-                The booster for this mission is expected to land on an ASDS.
-            </p>
-            <Button
-                onClick={():void=>console.log('click')}
-            >See More</Button>
+            {
+                launch  
+                    ?<>
+
+                        <h3>{launch.mission_name}</h3>
+                        <Scrollbars style={{ width: "100%" , height: "100px", minHeight:"100px" , overflowAnchor:"none"}}>
+                        <p>
+                                {launch?.details}
+                        </p>
+                        </Scrollbars>
+                        <Button
+                            onClick={():void=>console.log('click')}
+                        >See More</Button>
+                    </>
+                    : <h3>Select Launch Past</h3>
+            }
         </Panel>
     )
 }
@@ -24,6 +38,8 @@ export const SeeMoreCard = () => {
 const Panel = styled(CardWrapper)`
     min-width: 700px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 
     order: 0;
     flex: 0 0 auto;
@@ -35,10 +51,14 @@ const Panel = styled(CardWrapper)`
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
 
+    & h1 {
+        margin-top: 0;
+    }
+
     
-    & p {
+    /* & p {
         max-width: 700px;
         overflow: auto;
 
-    }
+    } */
 `
