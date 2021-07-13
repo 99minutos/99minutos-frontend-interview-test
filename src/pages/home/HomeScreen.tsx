@@ -1,27 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from "styled-components";
 import { NavBar } from '../../components/shared/navbar/NavBar';
 import { SideBar } from '../../components/shared/sidebar/SideBar';
 import { MainPanel } from '../../components/ui/mainPanel/MainPanel';
-import { useQuery } from '@apollo/client';
-import { GET_LAUNCHES_PAST } from '../../graphql/queries/LaunchesPast';
-import { useState } from 'react';
-import { launchesPastQuery, LaunchesPast } from '../../interfaces/LaunchPast';
+import { useLaunchesPast } from '../../hooks/useLaunchesPast';
 
 
 export const HomeScreen = () => {
 
-    const [launchesPast, setLaunchesPast] = useState<LaunchesPast[]>([])
-    const [launchSeletect, setLaunchSeletect] = useState<LaunchesPast | null>(null)
-
-    const { data, loading, error } = useQuery<launchesPastQuery>( GET_LAUNCHES_PAST )
-
-    useEffect(() => {
-        if(!loading && !error) {
-            setLaunchesPast(data!.launchesPast)
-        }
-    }, [loading, data, error])
-
+    const {launchesPast, launchSelected, setLaunchSelected} = useLaunchesPast()
 
     return (
         <HomeWrapper>
@@ -29,8 +16,8 @@ export const HomeScreen = () => {
             <NavBar/>
 
             <MainWrapper>
-                <SideBar launches= {launchesPast} onSelectItem={setLaunchSeletect} />
-                <MainPanel launch= {launchSeletect} />
+                <SideBar launches= {launchesPast} onSelectItem={setLaunchSelected} />
+                <MainPanel launch= {launchSelected} />
             </MainWrapper>
 
         </HomeWrapper>
