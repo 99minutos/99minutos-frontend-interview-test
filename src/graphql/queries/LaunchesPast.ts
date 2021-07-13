@@ -11,16 +11,10 @@ export const GET_LAUNCHES_PAST: DocumentNode = gql`
       links {
         article_link
         video_link
+        flickr_images
       }
       rocket {
         rocket_name
-        second_stage {
-          payloads {
-            payload_type
-            payload_mass_kg
-            payload_mass_lbs
-          }
-        }
       }
       ships {
         name

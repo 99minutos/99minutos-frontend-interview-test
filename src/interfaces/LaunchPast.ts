@@ -21,12 +21,13 @@ export interface LaunchSite {
 export interface Links {
     article_link: null | string;
     video_link:   null | string;
+    flickr_images:   string[];
 }
 
 export interface Rocket {
     rocket_name:  string;
-    first_stage?:  FirstStage;
-    second_stage: SecondStage;
+    // first_stage?:  FirstStage;
+    // second_stage: SecondStage;
 }
 
 export interface FirstStage {
