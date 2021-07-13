@@ -6,6 +6,7 @@ import { LaunchesPast } from '../../../interfaces/LaunchPast';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 
+
 interface DetailCardProps {
     launch: LaunchesPast | null;
 };
@@ -32,40 +33,51 @@ export const DetailCard: React.FC<DetailCardProps> = ({launch}) => {
                     ? <>
                             <h3 >{launch.mission_name}</h3>
 
-                            <ul>
-                                <li><b>Rocket Name: </b><span>{launch.rocket.rocket_name}</span></li>
-                                <li><b>launch Site: </b><span>{launch.launch_site.site_name_long}</span></li>
-                                <li><b>Payloads: </b>
-                                    <ul>
-                                        {
-                                            launch.rocket.second_stage.payloads.map( (payload,i) =>(
-                                                <li key={i}>
-                                                    <span>{payload.payload_type} of { payload.payload_mass_kg } Kg
-                                                    </span>
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </li>
+                            <InfoWrapper>
                                 {
-                                    launch.ships.length > 0
-                                        &&
-                                        <li><b>Ships: </b>
-                                            <ul>
-                                                {
-                                                    launch.ships.map( (ship,i) =>(
-                                                        <li key={i}>
-                                                            <b>Name: </b><span>"{ship.name}"  </span> 
-                                                            <b> Port: </b><span>{ship.home_port}</span>
-                                                        </li>
-                                                    ))
-                                                }                                      
-                                            </ul>
-                                        </li>
+                                    launch.links.flickr_images.length > 0 &&
+                                    <ImagePortrait
+                                        src={launch.links.flickr_images[0]}
+                                        alt={launch.rocket.rocket_name}
+                                    />
                                 }
-                                
-                                
-                            </ul>
+
+                                <ul>
+                                    <li><b>Rocket Name: </b><span>{launch.rocket.rocket_name}</span></li>
+                                    <li><b>launch Site: </b><span>{launch.launch_site.site_name_long}</span></li>
+                                    {/* <li><b>Payloads: </b>
+                                        <ul>
+                                            {
+                                                launch.rocket.second_stage.payloads.map( (payload,i) =>(
+                                                    <li key={i}>
+                                                        <span>{payload.payload_type} of { payload.payload_mass_kg } Kg
+                                                        </span>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </li> */}
+                                    {/* {
+                                        launch.ships.length > 0
+                                            &&
+                                            <li><b>Ships: </b>
+                                                <ul>
+                                                    {
+                                                        launch.ships.map( (ship,i) =>(
+                                                            <li key={i}>
+                                                                <b>Name: </b><span>"{ship.name}"  </span> 
+                                                                <b> Port: </b><span>{ship.home_port}</span>
+                                                            </li>
+                                                        ))
+                                                    }                                      
+                                                </ul>
+                                            </li>
+                                    } */}
+                                    
+                                    
+                                </ul>
+                            </InfoWrapper>
+
                         </>
                     :    <h3 >Select Launch Past</h3>         
             }
@@ -103,4 +115,12 @@ const CustomScrollbars = styled(Scrollbars)`
     & div:first-of-type {
         overflow: auto !important;
     }
+`
+
+const InfoWrapper = styled.div`
+    display: flex;
+`
+const ImagePortrait = styled.img`
+    display: block;
+    width: 40%;
 `
