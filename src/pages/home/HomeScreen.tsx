@@ -25,8 +25,8 @@ export const HomeScreen = () => {
 }
 
 const HomeWrapper = styled.div`
-    height: auto;
-    padding-bottom: 7%;
+    height: 100vh;
+    /* padding-bottom: 7%; */
     background-color: #2f373e;
     color: #fff;
     padding-left: 25px;
