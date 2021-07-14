@@ -1,0 +1,29 @@
+.launches-list,
+.launch-select {
+    height: 100%;
+    position: relative;
+}
+
+.launches-list {
+    width: 350px;
+    float: left;
+}
+
+@media screen and (max-width: 960px){
+    .launches-list {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .launches-list {
+        width: 100%;
+        float: none;
+    }
+    .launch-select {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
