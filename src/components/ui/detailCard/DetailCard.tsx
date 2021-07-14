@@ -117,6 +117,11 @@ const CustomScrollbars = styled(Scrollbars)`
 
 const InfoWrapper = styled.div`
     display: flex;
+
+    & ul {
+        padding-right: 10px;
+    }
+
 `
 const ImagePortrait = styled.img`
     display: block;
