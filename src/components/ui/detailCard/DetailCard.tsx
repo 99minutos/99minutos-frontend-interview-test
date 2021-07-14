@@ -1,10 +1,8 @@
-import React from 'react'
+import React,{ useRef, useEffect} from 'react'
 import styled from "styled-components";
 import { Scrollbars } from 'react-custom-scrollbars';
 import { CardWrapper } from '../styled-components/card';
 import { LaunchesPast } from '../../../interfaces/LaunchPast';
-import { useRef } from 'react';
-import { useEffect } from 'react';
 
 
 interface DetailCardProps {
