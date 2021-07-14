@@ -86,7 +86,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({launch}) => {
 
 const Panel = styled(CardWrapper)`
     min-width: 700px;
-    max-height: 40%;
+    /* max-height: 40%; */
     overflow: auto;
     line-height: 1.5;
     
@@ -120,5 +120,5 @@ const InfoWrapper = styled.div`
 `
 const ImagePortrait = styled.img`
     display: block;
-    width: 40%;
+    max-width: 40%;
 `
