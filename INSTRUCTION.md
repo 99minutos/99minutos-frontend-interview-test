@@ -33,6 +33,12 @@ As an improvement I would add some new functions, such as being able to choose t
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##.env
+
+In the project directory, create .env:
+
+### `REACT_APP_API_URL = https://api.spacex.land/graphql/`
+
 ## Available Scripts
 
 In the project directory, you can run:
