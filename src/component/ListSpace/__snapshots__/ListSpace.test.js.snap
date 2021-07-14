@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Space should render a list of items 1`] = `
+Array [
+  <ul
+    role="listitem"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root card MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardMedia-root img-container"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular makeStyles-large-1"
+        >
+          <img
+            alt="Starlink-15 (v1.0)"
+            class="MuiAvatar-img"
+            src="spacecraft.png"
+          />
+        </div>
+      </div>
+      <div
+        class="card-details"
+      >
+        <div
+          class="MuiCardContent-root"
+        >
+          <h5
+            class="title"
+          >
+            Starlink-15 (v1.0)
+          </h5>
+          <p
+            class="description"
+          >
+            No Data Available
+          </p>
+          <p
+            class="date"
+          >
+            10/24/2020
+          </p>
+        </div>
+      </div>
+    </div>
+  </ul>,
+]
+`;
