@@ -20,13 +20,17 @@ export const SeeMoreCard: React.FC<SeeMoreCardProps> = ({launch}) => {
                     ?<>
 
                         <h3>{launch.mission_name}</h3>
-                        <Scrollbars style={{ width: "100%" , height: "100px", minHeight:"100px" , overflowAnchor:"none"}}>
-                        <p>
-                                {launch?.details}
-                        </p>
+                        <Scrollbars style={{ 
+                            width: "100%" ,
+                            maxHeight: "50%", 
+                            minHeight:"130px",
+                            marginBottom: "15px",
+                            overflowAnchor:"none"}}
+                        >
+                            <p>{launch?.details}</p>
                         </Scrollbars>
                         <Button
-                            onClick={():void=>console.log('click')}
+                            onClick={():void=>{window.open(`${launch.links.video_link}`)}}
                         >See More</Button>
                     </>
                     : <h3>Select Launch Past</h3>
@@ -41,28 +45,21 @@ const Panel = styled(CardWrapper)`
     margin-top: 0;
     margin-bottom: 0;
 
-    order: 0;
-    flex: 0 0 auto;
     align-self: auto;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
 
     & div:first-of-type {
         overflow-x: hidden !important;
+        margin-bottom: 0 !important;
     }
 
     & h1 {
         margin-top: 0;
     }
 
-    
-    /* & p {
-        max-width: 700px;
-        overflow: auto;
 
-    } */
 `

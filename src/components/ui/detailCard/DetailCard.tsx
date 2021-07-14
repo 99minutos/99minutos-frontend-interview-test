@@ -86,17 +86,14 @@ export const DetailCard: React.FC<DetailCardProps> = ({launch}) => {
 
 const Panel = styled(CardWrapper)`
     min-width: 700px;
-    /* max-height: 40%; */
     overflow: auto;
     line-height: 1.5;
     
-    flex: 2 1 auto;
-    order: 0;
     align-self: auto;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
+    flex: 2 1 auto;
     -webkit-flex: 2 1 auto;
     -ms-flex: 2 1 auto;
+    -ms-flex-order: 0;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     
