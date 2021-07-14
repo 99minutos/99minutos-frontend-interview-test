@@ -51,6 +51,10 @@ const Panel = styled(CardWrapper)`
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
 
+    & div:first-of-type {
+        overflow-x: hidden !important;
+    }
+
     & h1 {
         margin-top: 0;
     }

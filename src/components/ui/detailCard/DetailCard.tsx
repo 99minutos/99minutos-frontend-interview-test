@@ -112,6 +112,7 @@ const Panel = styled(CardWrapper)`
 const CustomScrollbars = styled(Scrollbars)`
     & div:first-of-type {
         overflow: auto !important;
+        overflow-x: hidden !important;
     }
 `
 
@@ -119,7 +120,7 @@ const InfoWrapper = styled.div`
     display: flex;
 
     & ul {
-        padding-right: 10px;
+        padding-right: 30px;
     }
 
 `
