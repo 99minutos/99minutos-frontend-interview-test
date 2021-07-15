@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from "styled-components";
 import logo from '../../../logo.png'
+import menu from '../../../menu.png'
 import { NavBarLogo } from '../../ui/styled-components/image'
 
 export const NavBar = () => {
     return (
         <NavBarWrapper>
-            <div className="container-fluid px-0">
+            <div>
                 <NavBarBrand>
                     <NavBarLogo 
                         src={logo}
@@ -14,7 +15,16 @@ export const NavBar = () => {
                         width={40} 
                         height={40}
                     />
+
                 </NavBarBrand>
+            </div>
+            <div className="menu">
+                <MenuBtn
+                    src={menu}
+                    alt="logo"
+                    width={40} 
+                    height={40}
+                />
             </div>
         </NavBarWrapper>
     )
@@ -30,11 +40,20 @@ const NavBarWrapper = styled.nav`
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem;
+    padding: 10px 0;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
+    & div.menu {
+        background: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    @media(min-width: 640px) {
+        & div.menu {
+            display: none;
+        }
+    }
+    
 
     @media (min-width: 992px) {
         -ms-flex-flow: row nowrap;
@@ -53,4 +72,8 @@ const NavBarBrand = styled.div`
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+`
+
+const MenuBtn = styled(NavBarLogo)`
+    
 `
