@@ -6,18 +6,29 @@ import { LaunchesPast } from '../../../interfaces/LaunchPast';
 
 interface MainPanelProps {
     launch: LaunchesPast | null;
+    isActiveSideBarMobile: boolean
 };
 
-export const MainPanel: React.FC<MainPanelProps> = ({launch}) => {
+export const MainPanel: React.FC<MainPanelProps> = ({launch, isActiveSideBarMobile}) => {
+
+    
     return (
-        <MainPanelWrapper>          
+        <MainPanelWrapper 
+            activeSideBar={isActiveSideBarMobile} 
+        >          
             <DetailCard launch={launch} />
             <SeeMoreCard launch={launch} />                    
         </MainPanelWrapper>
     )
 }
 
-const MainPanelWrapper = styled.div`
+interface MainPanelWrapperProp {
+    activeSideBar: boolean
+}
+
+const MainPanelWrapper = styled.div.attrs( ({activeSideBar}:MainPanelWrapperProp) => ({
+    activeSideBar: activeSideBar    
+}))`
     height: 75vh;
     overflow: auto;
     margin-bottom: 20px;
@@ -56,6 +67,16 @@ const MainPanelWrapper = styled.div`
         min-width: 50%;
     }
     
+
+
+    ${(props)=>props.activeSideBar && window.matchMedia( "(max-width: 400px)" ).matches
+        &&
+        `
+            & div.c_scroll div:first-of-type {
+                inset: auto !important; 
+            }
+        `
+    }
 
 `
 

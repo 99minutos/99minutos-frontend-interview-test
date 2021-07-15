@@ -20,7 +20,7 @@ export const SeeMoreCard: React.FC<SeeMoreCardProps> = ({launch}) => {
                     ?<>
 
                         <h3>{launch.mission_name}</h3>
-                        <Scrollbars style={{ 
+                        <Scrollbars className="c_scroll" style={{ 
                             width: "100%" ,
                             maxHeight: "50%", 
                             minHeight:"130px",

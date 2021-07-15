@@ -28,7 +28,10 @@ export const HomeScreen = () => {
                     onSelectItem={setLaunchSelected} 
                     isActiveSideBarMobile={sideBarState}
                     />
-                <MainPanel launch= {launchSelected} />
+                <MainPanel 
+                    launch= {launchSelected}  
+                    isActiveSideBarMobile={sideBarState}
+                />
             </MainWrapper>
 
         </HomeWrapper>
