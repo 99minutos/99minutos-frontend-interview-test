@@ -4,19 +4,30 @@ import { NavBar } from '../../components/shared/navbar/NavBar';
 import { SideBar } from '../../components/shared/sidebar/SideBar';
 import { MainPanel } from '../../components/ui/mainPanel/MainPanel';
 import { useLaunchesPast } from '../../hooks/useLaunchesPast';
+import { useSideBar } from '../../hooks/useSideBar';
 
 
 export const HomeScreen = () => {
 
-    const {launchesPast, launchSelected, setLaunchSelected} = useLaunchesPast()
+    const {sideBarState,toggleSideBar, hiddeSideBar} = useSideBar(true)
+    const {launchesPast, launchSelected, setLaunchSelected} = useLaunchesPast(hiddeSideBar)
+
 
     return (
-        <HomeWrapper>
+        <HomeWrapper
+            // onClick={hiddeSideBar}
+        >
 
-            <NavBar/>
+            <NavBar
+                menuBtnAction={toggleSideBar}
+            />
 
             <MainWrapper>
-                <SideBar launches= {launchesPast} onSelectItem={setLaunchSelected} />
+                <SideBar 
+                    launches= {launchesPast} 
+                    onSelectItem={setLaunchSelected} 
+                    isActiveSideBarMobile={sideBarState}
+                    />
                 <MainPanel launch= {launchSelected} />
             </MainWrapper>
 
@@ -24,9 +35,15 @@ export const HomeScreen = () => {
     )
 }
 
-const HomeWrapper = styled.div`
+
+
+const HomeWrapper = styled.div.attrs( (props) => ({
+    custompadding: window.matchMedia( "(max-height: 400px)" ).matches ? "15%" 
+                                                                      : window.matchMedia( "(max-height: 700px)" ).matches ? "7%" : ""
+    
+}))`
     height: 100vh;
-    /* padding-bottom: 7%; */
+    padding-bottom: ${props => props.custompadding}; 
     background-color: #2f373e;
     color: #fff;
     padding-left: 25px;

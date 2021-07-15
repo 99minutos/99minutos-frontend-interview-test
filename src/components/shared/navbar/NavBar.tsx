@@ -4,7 +4,11 @@ import logo from '../../../logo.png'
 import menu from '../../../menu.png'
 import { NavBarLogo } from '../../ui/styled-components/image'
 
-export const NavBar = () => {
+interface NavBarProps {
+    menuBtnAction: ()=> void;
+};
+
+export const NavBar: React.FC<NavBarProps> = ({menuBtnAction}) => {
     return (
         <NavBarWrapper>
             <div>
@@ -18,7 +22,7 @@ export const NavBar = () => {
 
                 </NavBarBrand>
             </div>
-            <div className="menu">
+            <div className="menu" onClick={menuBtnAction}>
                 <MenuBtn
                     src={menu}
                     alt="logo"
@@ -48,7 +52,7 @@ const NavBarWrapper = styled.nav`
         cursor: pointer;
     }
     
-    @media(min-width: 640px) {
+    @media(min-width: 641px) {
         & div.menu {
             display: none;
         }

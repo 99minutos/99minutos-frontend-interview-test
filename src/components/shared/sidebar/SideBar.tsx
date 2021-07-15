@@ -7,12 +7,16 @@ import { LaunchesPast } from '../../../interfaces/LaunchPast';
 interface SideBarProps {
     launches: LaunchesPast[];
     onSelectItem: (launch:LaunchesPast)=> void;
+    isActiveSideBarMobile: boolean;
 };
 
-export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
+export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem, isActiveSideBarMobile}) => {
 
+    
     return (
-        <SideBarWrapper>
+        <SideBarWrapper
+            activeSideBar={isActiveSideBarMobile}
+        >
             <h1>Last Launches</h1>
 
 
@@ -35,7 +39,14 @@ export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
     )
 }
 
-const SideBarWrapper = styled.div`
+interface SideBarShowProp {
+    activeSideBar: boolean
+}
+
+const SideBarWrapper = styled.div.attrs( ({activeSideBar}:SideBarShowProp) => ({
+    activeSideBar: activeSideBar 
+    
+}))`
     height: 75vh;
     overflow: hidden;
     margin-bottom: 20px;
@@ -51,12 +62,20 @@ const SideBarWrapper = styled.div`
         margin-bottom: 0;
     }
 
-    /* elemento {
-	position: absolute;
-	z-index: 1;
-	background: #fff;
-	left: 25px;
-    } */
+    
+
+    ${(props)=>props.activeSideBar && window.matchMedia( "(max-width: 640px)" ).matches
+        &&
+        `position: absolute; 
+         z-index: 1; 
+         background: #fff; 
+         left: 25px;
+
+         -webkit-transition: width 0.7s;
+         transition: width 0.7s;
+        `
+    }
+
 
 `
 const SideBarRockets = styled.div`

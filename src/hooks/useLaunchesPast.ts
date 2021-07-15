@@ -4,7 +4,7 @@ import { LaunchesPast, launchesPastQuery } from '../interfaces/LaunchPast';
 import { GET_LAUNCHES_PAST } from '../graphql/queries/LaunchesPast';
 
 
-export const useLaunchesPast = () => {
+export const useLaunchesPast = (onHide:()=>void) => {
 
     const [launchesPast, setLaunchesPast] = useState<LaunchesPast[]>([])
     const [launchSelected, setLaunchSelected] = useState<LaunchesPast | null>(null)
@@ -16,9 +16,15 @@ export const useLaunchesPast = () => {
         }
     }, [loading, data, error])
 
+    const selectLaunchSideBarIntegration = (launch:LaunchesPast):void => {
+
+        setLaunchSelected(launch)
+        onHide()
+    }
+
     return {
         launchesPast,
         launchSelected,
-        setLaunchSelected
+        setLaunchSelected:selectLaunchSideBarIntegration
     }
 }
