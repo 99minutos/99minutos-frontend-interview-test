@@ -71,8 +71,11 @@ const SideBarWrapper = styled.div.attrs( ({activeSideBar}:SideBarShowProp) => ({
          background: #fff; 
          left: 25px;
 
-         -webkit-transition: width 0.7s;
-         transition: width 0.7s;
+         
+         transition: all 0.2s ease;
+         -webkit-transition: all 0.2s ease;
+         -moz-transition: all 0.2s ease;
+         -o-transition: all 0.2s ease;
         `
     }
 
