@@ -17,7 +17,7 @@ To get started with this project:
 
 Get image from Docker hub: 
 1) Install [Docker](https://www.docker.com/get-started)
-2) Run <span style="color:gray">$docker run -p 8000:80 --name spacex_jam afernandezro7spacex_space_jam</span> 
+2) Run <span style="color:gray">$docker run -p 8000:80 --name spacex_jam afernandezro7spacex_space_jam:v3</span> 
 3) Open host on port 8000 ex: [http://localhost:8000](http://localhost:8000)
 
 ## The Application
