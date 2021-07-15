@@ -16,7 +16,7 @@ export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
             <h1>Last Launches</h1>
 
 
-            <Scrollbars style={{ width: 500 , height: "100%" }}>
+            <CustomScroll>
                 <SideBarRockets>
                     {
                         launches.map( (launch:LaunchesPast) =>(
@@ -28,7 +28,7 @@ export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
                         ))
                     }
                 </SideBarRockets>
-            </Scrollbars>
+            </CustomScroll>
 
             
         </SideBarWrapper>
@@ -36,7 +36,7 @@ export const SideBar: React.FC<SideBarProps> = ({launches, onSelectItem}) => {
 }
 
 const SideBarWrapper = styled.div`
-    height: 70vh;
+    height: 75vh;
     overflow: hidden;
     margin-bottom: 20px;
     padding-top: 30px;
@@ -51,9 +51,25 @@ const SideBarWrapper = styled.div`
         margin-bottom: 0;
     }
 
+    /* elemento {
+	position: absolute;
+	z-index: 1;
+	background: #fff;
+	left: 25px;
+    } */
+
 `
 const SideBarRockets = styled.div`
     padding: 30px;
     display: flex;
     flex-direction: column;
+`
+
+const CustomScroll = styled(Scrollbars)`
+    width: 500px !important;
+    height: 100%;
+
+    @media(max-width: 1024px) {
+        width: 300px !important;
+    }
 `

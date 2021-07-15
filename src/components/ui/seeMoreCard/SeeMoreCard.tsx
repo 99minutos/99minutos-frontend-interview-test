@@ -40,7 +40,7 @@ export const SeeMoreCard: React.FC<SeeMoreCardProps> = ({launch}) => {
 }
 
 const Panel = styled(CardWrapper)`
-    min-width: 700px;
+    min-width: 90%;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -60,6 +60,10 @@ const Panel = styled(CardWrapper)`
     & h1 {
         margin-top: 0;
     }
+
+    /* @media(min-width: 768px) {
+        min-width: 700px;
+    } */
 
 
 `

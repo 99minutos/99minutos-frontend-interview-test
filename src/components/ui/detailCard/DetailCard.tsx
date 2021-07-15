@@ -85,7 +85,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({launch}) => {
 }
 
 const Panel = styled(CardWrapper)`
-    min-width: 700px;
+    min-width: 90%;
     overflow: auto;
     line-height: 1.5;
     
@@ -99,10 +99,18 @@ const Panel = styled(CardWrapper)`
     
     & h3 {
         text-align: center;
+
     }
     & li {
         list-style: none;
     }
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 800px){
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+
 
 `
 
@@ -120,8 +128,21 @@ const InfoWrapper = styled.div`
         padding-right: 30px;
     }
 
+    @media screen and (min-device-width: 481px) and (max-device-width: 800px){
+        flex-direction: column !important;
+        align-items: center !important;
+
+        & ul {
+            padding: 5px;
+        }
+    }
+
 `
 const ImagePortrait = styled.img`
     display: block;
     max-width: 40%;
+
+    @media screen and (min-device-width: 481px) and (max-device-width: 800px){
+        max-width: 90%;
+    }
 `

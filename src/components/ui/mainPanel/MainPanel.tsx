@@ -18,7 +18,7 @@ export const MainPanel: React.FC<MainPanelProps> = ({launch}) => {
 }
 
 const MainPanelWrapper = styled.div`
-    height: 70vh;
+    height: 75vh;
     overflow: auto;
     margin-bottom: 20px;
     padding: 30px;
@@ -48,6 +48,14 @@ const MainPanelWrapper = styled.div`
         text-align: center;
         color: #2f373e;
     }
+
+    @media(max-width: 640px) {
+        min-width: 90%;
+    }
+    @media(min-width: 800px) {
+        min-width: 50%;
+    }
+    
 
 `
 
