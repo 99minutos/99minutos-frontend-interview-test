@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 
 import { useQuery } from '@apollo/client';
 
+import { useLaunch } from '../../context';
 import { getParseDate } from '../../utils';
 import Button from '../Button';
 import Loader from '../Loader';
@@ -22,9 +23,13 @@ import {
  
 const Mision: FC = () => {
 
+  const { launchSelected } = useLaunch();
+  const isThereNoLaunchId: boolean = !launchSelected;
+
   const { loading, error, data } = useQuery(GET_LAUNCHES, {
+    skip: isThereNoLaunchId,
     variables: {
-      id: "109"
+      id: launchSelected
     },
   });
 
