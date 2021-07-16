@@ -6,7 +6,11 @@ import backgroundPlaceholder from '../../../assets/images/svg/rocket.svg';
 const aspectRatio16x9: string = '56.25%';
 const aspectRatio1x1: string = '100%';
 
-export const LauchPreviewStyled = styled.section`
+type LauchPreviewStyledProps = {
+  selected: boolean
+}
+
+export const LauchPreviewStyled = styled.section<LauchPreviewStyledProps>`
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -17,6 +21,12 @@ export const LauchPreviewStyled = styled.section`
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+
+  ${({ selected }) => selected && css`
+    background-color: ${colors.black};
+  
+    * { color: white; }
+  `}
 
   &:hover {
     background-color: ${colors.midNightBlue};

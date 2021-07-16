@@ -13,58 +13,77 @@ import {
   MisionName,
 } from './styles';
 
-const LauchPreview: FC = () => {
+type LauchPreviewProps = {
+  id: string,
+  imageSource: string,
+  launchDateTime: string,
+  launchSite: string,
+  missionName: string,
+  isSelected: boolean,
+  handleSelect: () => void,
+}
 
-  const imageSource: string = 'https://live.staticflickr.com/65535/50630802488_8cc373728e_o.jpg';
-  const missionName: string = 'Starlink-15 (v1.0)';
-  const launchSite: string = 'Cape Canaveral Air Force Station Space Launch Complex 40';
-  const lauchDateTime: string = '2020-10-24T11:31:00-04:00';
-  const parsedDate: string = getParseDate(lauchDateTime);
+const LauchPreview: FC<LauchPreviewProps> = (props) => {
+
+  const { imageSource, launchDateTime, launchSite, missionName } = props;
+  const { isSelected, handleSelect } = props;
+  const doesLaunchHasImage: boolean = !!imageSource;
+  const parsedDate: string = getParseDate(launchDateTime);
 
   const [isMobile, setIsMobile] = useState<boolean>(true);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const handleOpenModal = () => isMobile && setIsModalOpen(true);
+  const handleCloseModal = () => isMobile && setIsModalOpen(false);
+  const handleClick = (): void => {
+    handleSelect?.();
+    handleOpenModal();
+  }
+
   useEffect(() => {
+    
     const configIsMobile = () => {
       const mobileResolutionInPX: number = 768;
-      const isMobileDevice: boolean = window.screen.width <= mobileResolutionInPX;
+      const viewportWidth: number = window.innerWidth;
+      const isMobileDevice: boolean = viewportWidth <= mobileResolutionInPX;
       setIsMobile(() => isMobileDevice);
     }
-    
+
+    configIsMobile();
+
     window.addEventListener('resize', configIsMobile);
 
     return () => window.removeEventListener('resize', configIsMobile);
   },
   [])
 
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const handleOpenModal = () => isMobile && setIsModalOpen(true);
-  const handleCloseModal = () => isMobile && setIsModalOpen(false);
-
   return (
     <>
-      <LauchPreviewStyled onClick={handleOpenModal}>
+      <LauchPreviewStyled
+        onClick={handleClick}
+        selected={isSelected}>
+
         <ImageWrapper>
           <LayerAspectRatio>
+          {doesLaunchHasImage && (
             <LaunchImage
               src={imageSource}
               alt={missionName}
               width="40"
-              height="40"
-            />
+              height="40" />
+          )}
           </LayerAspectRatio>
         </ImageWrapper>
           
         <InfoWrapper>
           <MisionName>{missionName}</MisionName>
           <LaunchSite>{launchSite}</LaunchSite>
-          <LauchDate dateTime={lauchDateTime}>{parsedDate}</LauchDate>
+          <LauchDate dateTime={launchDateTime}>{parsedDate}</LauchDate>
         </InfoWrapper>
       </LauchPreviewStyled>
 
       {isMobile && isModalOpen && (
         <Modal handleCloseModal={handleCloseModal}>
-
           <Mission />
-
         </Modal>
       )}
     </>
