@@ -52,6 +52,10 @@ export const InfoWrapper = styled.div`
   & > * + * { margin-top: 20px; }
 `;
 
+export const ButtonWrapper = styled.div`
+  margin-top: 40px;
+`;
+
 export const MissionName = styled.h2`
   text-align: center;
   font-weight: 600;
@@ -66,23 +70,11 @@ export const Label = styled.span`
   font-weight: 600;
 `;
 
-export const MainButton = styled.button`
-  border: none;
-  outline: none;
-  background-color: ${colors.black};
-  width: 100%;
-  line-height: 50px;
-  font-weight: 600;
-  color: ${colors.white};
-  border-radius: 5px;
-  box-shadow: 0 2px 5px ${colors.shadowGray};
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover { background-color: ${colors.midNightBlue}; }
-
-  &:active {
-    opacity: 0.8;
-    transform: scale(0.97);
-  }
+export const Wrapper = styled.div`
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${colors.white};
 `;

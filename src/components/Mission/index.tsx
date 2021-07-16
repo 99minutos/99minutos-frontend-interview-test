@@ -1,45 +1,62 @@
 import React, { FC } from 'react';
 
+import { useQuery } from '@apollo/client';
+
 import { getParseDate } from '../../utils';
+import Button from '../Button';
+import Loader from '../Loader';
 import ScrollView from '../ScrollView';
+import GET_LAUNCHES from './query';
 import {
+  ButtonWrapper,
   ImageWrapper,
   InfoWrapper,
   Label,
   LaunchImage,
   LayerAspectRatio,
   MissionName,
-  MainButton,
   MissionDetails,
   MissionStyled,
+  Wrapper,
 } from './styles';
  
 const Mision: FC = () => {
 
-  const imageSource: string = 'https://live.staticflickr.com/65535/50630802488_8cc373728e_o.jpg';
-  const missionName: string = 'Starlink-15 (v1.0)';
-  const missionDetails: string = 'SpaceX will launch Sentinel-6 Michael Freilich into low Earth orbit for NASA, NOAA, ESA, and the European Organization for the Exploitation of Meteorological Satellites aboard a Falcon 9 from SLC-4E, Vandenberg Air Force Station. Sentinel-6(A) is an ocean observation satellite providing radar ocean surface altimetry data and also atmospheric temperature profiles as a secondary mission. The booster for this mission is will land at LZ-4.';
+  const { loading, error, data } = useQuery(GET_LAUNCHES, {
+    variables: {
+      id: "109"
+    },
+  });
 
-  // missionDetail puede ser null
-  // const noMissionDetailsMessage: string = 'There is no details available for this mission';
+  const isThereNoData: boolean = !data?.launch;
 
-  const lauchDateTime: string = '2020-10-24T11:31:00-04:00';
+  if (isThereNoData || loading) return (<Wrapper><Loader /></Wrapper>);
+  
+  if (error) return (<Wrapper><h2>ERROR</h2></Wrapper>);
+
+  const { launch } = data;
+  const missionName: string = launch.mission_name;
+  const lauchDateTime: string = launch.launch_date_local;
   const parsedDate: string = getParseDate(lauchDateTime);
-
-  const rocketName: string = 'Falcon 9';
-  const rocketType: string = 'FT';
+  const rocketName: string = launch.rocket.rocket_name;
+  const rocketType: string = launch.rocket.rocket_type;
+  const noMissionDetailsMessage: string = 'There is no details available for this mission';
+  const missionDetails: string = launch.details ?? noMissionDetailsMessage;
+  const imageSource: string = launch.links.flickr_images?.[0];
+  const articleLink: any = launch.links.article_link ?? '';
 
   return (
     <ScrollView>
       <MissionStyled>
         <ImageWrapper>
           <LayerAspectRatio>
+          {imageSource && (
             <LaunchImage
               src={imageSource}
               alt={missionName}
               width="300"
-              height="300"
-            />
+              height="300" />
+          )}
           </LayerAspectRatio>
         </ImageWrapper>
 
@@ -49,7 +66,9 @@ const Mision: FC = () => {
           <p><Label>Rocket Name:</Label> {rocketName}</p>
           <p><Label>Rocket Type:</Label> {rocketType}</p>
           <MissionDetails>{missionDetails}</MissionDetails>
-          <MainButton>SEE MORE</MainButton>
+          <ButtonWrapper>
+            <Button href={articleLink}> SEE MORE</Button>
+          </ButtonWrapper>
         </InfoWrapper>
       </MissionStyled>
     </ScrollView>
