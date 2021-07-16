@@ -1,11 +1,7 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div>
-      <h1>ROCKET</h1>
-    </div>
-  );
-}
+import { Home } from './views';
 
-export default App;
+export default function App() {
+  return <Home />;
+}
