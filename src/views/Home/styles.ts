@@ -1,15 +1,15 @@
 import styled, { css } from 'styled-components';
 
-import { mixins } from '../../assets/styles/config';
+import { colors, mixins } from '../../assets/styles/config';
 
 export const HomeStyled = styled.main`
   display: flex;
   height: 100vh;
-  width: 100%;
+  min-height: 100vh;
 `;
 
 export const LastLaunchesWrapper = styled.div`
-  flex-grow: 1;
+  flex-basis: 100%;
 
   ${mixins.responsiveMedium(css`
     max-width: 35%;
@@ -20,6 +20,7 @@ export const MissionWrapper = styled.div`
   width: 0;
   overflow: hidden;
   visibility: hidden;
+  background-color: ${colors.white};
 
   ${mixins.responsiveMedium(css`
     flex-grow: 1;

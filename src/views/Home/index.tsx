@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 
+import { LaunchProvider } from '../../context';
 import { LastLaunches, Mission } from '../../components';
 import {
   HomeStyled,
@@ -8,15 +9,17 @@ import {
 } from './styles';
 
 const Home: FC = () => (
-  <HomeStyled>
-    <LastLaunchesWrapper>
-      <LastLaunches />
-    </LastLaunchesWrapper>
+  <LaunchProvider>
+    <HomeStyled>
+       <LastLaunchesWrapper>
+        <LastLaunches />
+      </LastLaunchesWrapper>
 
-    <MissionWrapper>
-      <Mission />
-    </MissionWrapper>
-  </HomeStyled>
+      <MissionWrapper>
+        <Mission />
+      </MissionWrapper>
+    </HomeStyled>
+  </LaunchProvider>
 );
 
 export default Home;
