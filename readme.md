@@ -64,3 +64,21 @@ We expect this test to take around 4 hours, but not significantly more (your tim
 If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
 If you have any question please contact eduardo.carrada@99minutos.com, isabel@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
 Happy coding!
+
+---
+## Solution Prints
+
+### Large Layout 
+![Large Layout](./screenshots/large-layout.png)
+
+### Madium Layout
+![Madium Layout](./screenshots/medium-layout.png)
+
+### Small Layout
+![Small Layout](./screenshots/small-layout-list.png)
+
+### Default Layout Detail
+![Default Layout Detail](./screenshots/defualt-layout-detail-modal.png)
+
+### Default Layout List
+![Default Layout List](./screenshots/defualt-layout-list.png)

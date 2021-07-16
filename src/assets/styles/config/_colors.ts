@@ -6,7 +6,7 @@ const colors = {
   black         : 'hsl(216deg,3%,20%)',
   white         : 'hsl(216deg,50%,100%)',
   shadowGray    : 'hsl(0deg,0%,70%)',
-  shadowDark    : 'hsl(0deg,0%,30%)',
+  shadowDark    : 'hsl(0deg,0%,10%)',
   transparent   : 'hsla(0,0%,0%,0)',
 }
 
