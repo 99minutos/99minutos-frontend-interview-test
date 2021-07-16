@@ -1,7 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
 
-import { getParseDate } from '../../../utils';
+import { getIsMobile, getParseDate } from '../../../utils';
 import { Modal, Mission } from '../../../components';
+import { LauchPreviewProps } from './types';
 import {
   ImageWrapper,
   InfoWrapper,
@@ -12,16 +13,6 @@ import {
   LauchPreviewStyled,
   MisionName,
 } from './styles';
-
-type LauchPreviewProps = {
-  id: string,
-  imageSource: string,
-  launchDateTime: string,
-  launchSite: string,
-  missionName: string,
-  isSelected: boolean,
-  handleSelect: () => void,
-}
 
 const LauchPreview: FC<LauchPreviewProps> = (props) => {
 
@@ -42,9 +33,7 @@ const LauchPreview: FC<LauchPreviewProps> = (props) => {
   useEffect(() => {
     
     const configIsMobile = () => {
-      const mobileResolutionInPX: number = 768;
-      const viewportWidth: number = window.innerWidth;
-      const isMobileDevice: boolean = viewportWidth <= mobileResolutionInPX;
+      const isMobileDevice: boolean = getIsMobile();
       setIsMobile(() => isMobileDevice);
     }
 
