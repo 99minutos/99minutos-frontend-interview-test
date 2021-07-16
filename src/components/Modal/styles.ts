@@ -23,7 +23,7 @@ export const CloseButton = styled.button`
   height: 70px;
   padding: 12px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px ${colors.shadowGray};
+  box-shadow: 0 2px 5px ${colors.shadowDark};
   background-color: ${colors.midNightBlue};
 
   &:active {

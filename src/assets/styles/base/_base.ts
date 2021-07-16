@@ -17,10 +17,7 @@ export default css`
   }
 
   html,
-  body {
-    min-width: 360px;
-    min-height: 100vh;
-  }
+  body { min-width: 360px; }
 
   body {
     max-width: 1920px;
@@ -35,6 +32,7 @@ export default css`
   h5,
   h6 {
     font-size: 28px;
+    line-height: 34px;
     color: ${colors.black};
   }
 
