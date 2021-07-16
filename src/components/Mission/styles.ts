@@ -21,7 +21,7 @@ export const LayerAspectRatio = styled.div`
   z-index: 1;
   padding-top: ${aspectRatio1x1};
   background:
-    ${colors.lightSilver}
+    ${colors.white}
     url(${placeholderImage})
     no-repeat
     scroll

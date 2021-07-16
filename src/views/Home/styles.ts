@@ -8,14 +8,21 @@ export const HomeStyled = styled.main`
   width: 100%;
 `;
 
+export const LastLaunchesWrapper = styled.div`
+  flex-grow: 1;
+
+  ${mixins.responsiveMedium(css`
+    max-width: 35%;
+  `)}
+`;
+
 export const MissionWrapper = styled.div`
   width: 0;
   overflow: hidden;
   visibility: hidden;
 
   ${mixins.responsiveMedium(css`
-    flex-shrink: 0;
-    width: 65%;
+    flex-grow: 1;
     visibility: visible;
   `)}
 `;

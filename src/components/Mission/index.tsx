@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
-import ScrollView from '../ScrollView';
 import { getParseDate } from '../../utils';
+import ScrollView from '../ScrollView';
 import {
   ImageWrapper,
   InfoWrapper,

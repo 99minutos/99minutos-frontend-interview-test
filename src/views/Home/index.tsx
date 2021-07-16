@@ -1,18 +1,22 @@
 import React, { FC } from 'react';
 
 import { LastLaunches, Mission } from '../../components';
-import { MissionWrapper, HomeStyled } from './styles';
+import {
+  HomeStyled,
+  LastLaunchesWrapper,
+  MissionWrapper,
+} from './styles';
 
-const Home: FC = () => {
-
-  return (
-    <HomeStyled>
+const Home: FC = () => (
+  <HomeStyled>
+    <LastLaunchesWrapper>
       <LastLaunches />
-      <MissionWrapper>
-        <Mission />
-      </MissionWrapper>
-    </HomeStyled>
-  );
-}
+    </LastLaunchesWrapper>
+
+    <MissionWrapper>
+      <Mission />
+    </MissionWrapper>
+  </HomeStyled>
+);
 
 export default Home;
