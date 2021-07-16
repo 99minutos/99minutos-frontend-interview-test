@@ -1,7 +1,10 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useMemo } from 'react';
 
 import { useQuery } from '@apollo/client';
 
+import { getIsMobile} from '../../utils';
+import { useLaunch } from '../../context';
+import Loader from '../Loader';
 import ScrollView from '../ScrollView';
 import LaunchPreview from './LauchPreview';
 import GET_LAST_LAUNCHES from './query';
@@ -10,24 +13,27 @@ import {
   LaunchesList,
   ListItem,
   Title,
+  Wrapper,
 } from './styles';
 
 const LastLaunches: FC = () => {
 
+  const { launchSelected, setLaunchSelected } = useLaunch();
+
+  const launchesQuantityToShow: number = 10;
+
   const { loading, error, data } = useQuery(GET_LAST_LAUNCHES, {
     variables: {
-      limit: 10
+      limit: launchesQuantityToShow
     }
   });
 
-  const [launchSelected, setLaunchSelected] = useState<string>("");
-  const handleSelected = (launchId: string) => (): void => setLaunchSelected(launchId);
+  const lastLaunches = useMemo(() => {
+    return data?.launchesPast ?? [];
+  },
+  [data]);
 
-  if (loading) return <h2>LOADING...</h2>;
-  if (error) return <h2>ERROR</h2>;
-
-  const { launchesPast } = data;
-  const lastLaunchesParsed: Array<any> = launchesPast.map((launch: any): any => ({
+  const lastLaunchesParsed: Array<any> = lastLaunches.map((launch: any): any => ({
     id: launch.id,
     imageSource: launch.links.flickr_images[0] ?? "",
     launchDateTime: launch.launch_date_local,
@@ -35,6 +41,19 @@ const LastLaunches: FC = () => {
     missionName: launch.mission_name,
   }))
 
+  useEffect(() => {
+    const isThereLaunches: boolean = !!lastLaunches.length;
+    const isNotMobileDevice: boolean = !getIsMobile();
+    const mustSetInitLaunch: boolean = isThereLaunches && isNotMobileDevice;
+    if (mustSetInitLaunch) {
+      const lastLaunchId: string = lastLaunches[0].id;
+      setLaunchSelected(lastLaunchId);
+    }
+  },
+  [lastLaunches, setLaunchSelected])
+
+  const handleSelected = (launchId: string) => (): void => setLaunchSelected(launchId);
+  
   const determineSelected = (currentId: string, selectedId: string): boolean => {
     return currentId === selectedId;
   }
@@ -42,23 +61,29 @@ const LastLaunches: FC = () => {
   return (
     <LastLaunchesStyled>
       <Title>Last Launches</Title>
-      
-      <ScrollView>
-        <LaunchesList>
-        {lastLaunchesParsed.map((launch) => (
-          <ListItem key={launch.id}>
-            <LaunchPreview
-              id={launch.id}
-              launchDateTime={launch.launchDateTime}
-              launchSite={launch.launchSite}
-              missionName={launch.missionName}
-              imageSource={launch.imageSource}
-              isSelected={determineSelected(launch.id, launchSelected)}
-              handleSelect={handleSelected(launch.id)} />
-          </ListItem>
-        ))}
-        </LaunchesList>
-      </ScrollView>
+
+      {loading && (<Wrapper><Loader /></Wrapper>)}
+
+      {!!error && (<Wrapper><h2>ERROR</h2></Wrapper>)}
+
+      {!!data && (
+        <ScrollView>
+          <LaunchesList>
+          {lastLaunchesParsed.map((launch) => (
+            <ListItem key={launch.id}>
+              <LaunchPreview
+                id={launch.id}
+                launchDateTime={launch.launchDateTime}
+                launchSite={launch.launchSite}
+                missionName={launch.missionName}
+                imageSource={launch.imageSource}
+                isSelected={determineSelected(launch.id, launchSelected)}
+                handleSelect={handleSelected(launch.id)} />
+            </ListItem>
+          ))}
+          </LaunchesList>
+        </ScrollView>
+      )}
     </LastLaunchesStyled>
   );
 }
