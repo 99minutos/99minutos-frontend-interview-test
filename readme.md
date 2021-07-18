@@ -1,4 +1,9 @@
 # 📦 99minutos Frontend Test
+# App Capture
+![alt text](https://github.com/MisaelMa/99mins/blob/main/public/capture/1.png?raw=true)
+
+![alt text](https://github.com/MisaelMa/99mins/blob/main/public/capture/2.png?raw=true)
+
 
 ## Welcome!
 If you’re reading this, it means we’re interested in working with you in 99minutos.com and solving amazing and difficult problems in shipping for online shopping tech in Latam.
@@ -14,7 +19,7 @@ Experience building responsive, elegant and scalable web applications; understan
 This is a quick coding challenge we designed to assess your qualifications as a potential front-end developer. It's important to note that this is by no means a test. We just want to get a sense of how you write code and solve problems.
 
 ## Getting started
-To get started with this challenge: 
+To get started with this challenge:
 1) Fork this repository.
 2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
 3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/SR).
