@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.containerDashboardSpaceLand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 3.7%;
+  width: 94%;
+  height: 83vh;
+  background-color: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  min-width: 570px;
+  min-height: 390px;
+}
+
+.containerDashboardSpaceLand .missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  border-right: 2px solid black;
+  color: black;
+  min-height: 500px;
+}
+
+.containerDashboardSpaceLand .containerMission {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-left: 2px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*# sourceMappingURL=dashboardSpaceLand.css.map */

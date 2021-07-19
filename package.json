@@ -1,0 +1,19 @@
+{
+  "name": "99minutos-frontend-interview-test-2",
+  "version": "1.0.0",
+  "description": "Space Land",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiriamNM/99minutos-frontend-interview-test-2.git"
+  },
+  "author": "Miriam Nava Muciño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiriamNM/99minutos-frontend-interview-test-2/issues"
+  },
+  "homepage": "https://github.com/MiriamNM/99minutos-frontend-interview-test-2#readme"
+}
