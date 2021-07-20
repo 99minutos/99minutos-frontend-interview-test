@@ -4,24 +4,23 @@
   display: flex;
   border: 2px solid black;
   border-radius: 20px;
-  width: 350px;
-  height: 100px;
+  width: 90%;
   border-radius: 20px;
-  overflow: hidden;
   padding-left: 6px;
   margin-left: 15px;
   margin-top: 0px;
+  margin-bottom: 10px;
   cursor: pointer;
   position: relative;
 }
 
 .containerItem .imgItem {
   margin-top: 15.5px;
-  padding-top: 0px;
+  padding-top: 15px;
 }
 
 .containerItem .imgItem img {
-  width: 80%;
+  width: 85%;
 }
 
 .containerItem .textItem {
@@ -41,10 +40,20 @@
 }
 
 .containerItem .textItem h3 {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .containerItem .textItem p {
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.containerItem .textItem .dateItem {
+  margin-right: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=item.css.map */

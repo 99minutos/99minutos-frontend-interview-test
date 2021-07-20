@@ -9,7 +9,7 @@ const Missions = (props) => {
                 <h2>Last Launches</h2>
             </div>
             <div className='containerItems'>
-                {props.spaceLand.map((item) => <Item item={item} key={item.id}/>)}
+                {props.spaceLand.map((data, id)=><Item data={data} key={id}/>)}
             </div>
         </section>
     )

@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=imageMission.css.map */
+.imageMission {
+  margin-top: 40px;
+}
+
+.imageMission img {
+  width: 78%;
+}
+/*# sourceMappingURL=imageMission.css.map */

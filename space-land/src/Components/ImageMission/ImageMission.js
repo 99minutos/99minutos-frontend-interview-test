@@ -1,10 +1,11 @@
 import React from 'react';
 import './imageMission.css';
 
-const ImageMission = () => {
+const ImageMission = ({spaceLand}) => {
+    const imageMission = spaceLand.ships;
     return (
-        <div>
-            <p>Hola soy imageMission</p>
+        <div className='imageMission'>
+            <img src={imageMission} alt="Mission" />
         </div>
     )
 };

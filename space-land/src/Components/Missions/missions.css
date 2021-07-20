@@ -2,37 +2,41 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 83vh;
 }
 
 .containerMissions .titleMissions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 40px;
-  margin-top: -50%;
+  margin-top: 0%;
   margin-bottom: -30px;
 }
 
 .containerMissions .titleMissions h2 {
   margin-top: 0%;
-  padding-top: 0%;
+  padding-top: 10%;
   margin-bottom: 0%;
   padding-bottom: 0%;
-  padding-left: 60px;
+  padding-left: 27%;
 }
 
 .containerMissions .containerItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  white-space: nowrap;
-  margin: 70px 0px;
-  padding-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15%;
+  overflow-y: scroll;
+  position: relative;
+  height: auto;
+  width: auto;
 }
 /*# sourceMappingURL=missions.css.map */

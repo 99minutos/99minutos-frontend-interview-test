@@ -2,24 +2,19 @@
     display: flex;
     border: 2px solid black;
     border-radius: 20px;
-    width: 350px;
-    height: 100px;
+    width: 90%;
     border-radius: 20px;
-    overflow: hidden;
     padding-left: 6px;
     margin-left: 15px;
     margin-top: 0px;
-    // margin-right: 5px;
-    // display: inline-block;
+    margin-bottom: 10px;
     cursor: pointer;
-    // transition: 450ms;
-    // transform-origin:  center left;
     position: relative;
     .imgItem {
         margin-top: 15.5px;
-        padding-top: 0px;
+        padding-top: 15px;
         img {
-            width: 80%;
+            width: 85%;
         }
     }
     .textItem {
@@ -30,11 +25,16 @@
         margin-left: 0px;
         margin-top: 5px;
         h3 {
-            font-size: 17px;
+            font-size: 15px;
         }
 
         p {
-            font-size: 15px;
+            font-size: 13px;
+        }
+        .dateItem {
+            margin-right: 7%;
+            display: flex;
+            justify-content: flex-end
         }
         }
 }

@@ -1,10 +1,13 @@
 import React from 'react';
 import './storyMission.css';
 
-const StoryMission = () => {
+const StoryMission = ({spaceLand}) => {
+    const titleMission = spaceLand.mission_name;
+    const detailsMission = spaceLand.details;
     return (
         <div>
-            <p>Hola soy StoryMission</p>
+            <h2>{titleMission}</h2>
+            <p>{detailsMission}</p>
         </div>
     )
 };

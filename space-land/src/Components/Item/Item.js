@@ -1,16 +1,14 @@
 import React from 'react';
 import Rocket from '../../assets/rocket.png'
 import './item.css';
+// import Moment from 'moment';
 
-const Item = (props) => {
-    console.group('data');
-    const titleMission = props.item.mission_name;
-    console.log(titleMission);
-    const subtitleMission = props.item.launch_date_local;
-    console.log(subtitleMission);
-    const date = props.item.launch_site.site_name_long;
-    console.log(date);
-    console.groupEnd();
+const Item = ({data}) => {
+    const titleMission = data.mission_name;
+    const subtitleMission = data.launch_site.site_name_long;
+    const originalDdate = new Date (data.launch_date_local);
+    const date = originalDdate.toLocaleDateString('en-US');
+
     return(
         <div className='containerItem'>
             <div className='imgItem'>
@@ -19,7 +17,8 @@ const Item = (props) => {
             <div className='textItem'>
                 <h3>{titleMission}</h3>
                 <p>{subtitleMission}</p>
-                <p>{date}</p> 
+                <p className='dateItem'>{date}</p>
+                 
             </div>
         </div>
     )

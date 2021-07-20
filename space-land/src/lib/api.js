@@ -10,41 +10,42 @@ const FerchGetPost = () => {
             query: `
             {
                 launchesPast(limit: 10) {
-                    mission_name
-                    launch_date_local
-                    launch_site {
+                  mission_name
+                  launch_date_local
+                  launch_site {
                     site_name_long
-                    }
-                    links {
+                  }
+                  links {
                     article_link
                     video_link
-                    }
-                    rocket {
+                  }
+                  rocket {
                     rocket_name
                     first_stage {
-                        cores {
+                      cores {
                         flight
                         core {
-                            reuse_count
-                            status
+                          reuse_count
+                          status
                         }
-                        }
+                      }
                     }
                     second_stage {
-                        payloads {
+                      payloads {
                         payload_type
                         payload_mass_kg
                         payload_mass_lbs
-                        }
+                      }
                     }
-                    }
-                    ships {
+                  }
+                  ships {
                     name
                     home_port
                     image
-                    }
+                  }
+                  details
                 }
-                }                             
+              }                             
             `
         }),
     })

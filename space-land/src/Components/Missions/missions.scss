@@ -1,24 +1,26 @@
 .containerMissions {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    height: 83vh;
     .titleMissions {
         display: flex;
-        padding-left: 40px;
-        margin-top: -50%;
+        margin-top: 0%;
         margin-bottom: -30px;
         h2 {
             margin-top: 0%;
-            padding-top: 0%;
+            padding-top: 10%;
             margin-bottom: 0%;
             padding-bottom: 0%;
-            padding-left: 60px;
+            padding-left: 27%;
         }
     }
     .containerItems {
         display: flex;
-        white-space: nowrap;
-        margin: 70px 0px;
-        padding-bottom: 10px;
+        flex-direction: column;
+        margin-top: 15%;
+        overflow-y: scroll;
+        position: relative;
+        height:auto;
+        width: auto;
     }
 }

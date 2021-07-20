@@ -20,16 +20,12 @@
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  min-width: 570px;
-  min-height: 390px;
 }
 
 .containerDashboardSpaceLand .missions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -38,7 +34,7 @@
       flex-basis: 30%;
   border-right: 2px solid black;
   color: black;
-  min-height: 500px;
+  height: 83vh;
 }
 
 .containerDashboardSpaceLand .containerMission {
@@ -50,5 +46,13 @@
   border-left: 2px solid black;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  height: 83vh;
+}
+
+.containerDashboardSpaceLand .containerMission button {
+  background-color: white;
+  border-color: black;
+  font-size: 16px;
+  padding: 2px 7px;
 }
 /*# sourceMappingURL=dashboardSpaceLand.css.map */

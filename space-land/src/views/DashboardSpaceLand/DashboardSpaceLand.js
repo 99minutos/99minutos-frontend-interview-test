@@ -23,8 +23,9 @@ const DashboardSpaceLand = () => {
                 <Missions spaceLand={spaceLand}/>
             </section>
             <section className='containerMission'>
-                <StoryMission spaceLand={spaceLand}/>
                 <ImageMission spaceLand={spaceLand}/>
+                <StoryMission spaceLand={spaceLand}/>
+                <button>See More</button>
             </section> 
         </section>
     )
