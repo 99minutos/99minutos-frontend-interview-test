@@ -1,13 +1,14 @@
 import React from 'react';
+import DetailsMission from '../../Components/detailsMission/DetailsMission';
 import './storyMission.css';
 
-const StoryMission = ({spaceLand}) => {
-    const titleMission = spaceLand.mission_name;
-    const detailsMission = spaceLand.details;
+const StoryMission = (props) => {
+    const data =props.mission.theMission;
     return (
-        <div>
-            <h2>{titleMission}</h2>
-            <p>{detailsMission}</p>
+        <div className='containerStoryMission'>
+            {data.map((item)=>
+            <DetailsMission item={item}/>
+            )}
         </div>
     )
 };

@@ -12,6 +12,7 @@
             margin-bottom: 0%;
             padding-bottom: 0%;
             padding-left: 27%;
+            padding-right: 10%;
         }
     }
     .containerItems {
@@ -22,5 +23,11 @@
         position: relative;
         height:auto;
         width: auto;
+        :hover {
+            background-color: #49565E;
+            border: none;
+            border-radius: 20px;
+            color: #ffffff;
+        }
     }
 }

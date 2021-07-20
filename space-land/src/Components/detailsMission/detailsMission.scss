@@ -1,0 +1,42 @@
+.imageMission {
+    margin-top: 0%;
+    margin-left: -15%;
+    margin-right: -18%;
+    img {
+        width: 38%;
+    }
+}
+.contentStoryMission {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h2 {
+        font-size: 18px;
+        padding-left: 3.5%;
+    }
+    p {
+        font-size: 13px;
+        margin: 0% 18% 0% 20%;
+        padding-bottom: 1.5%;
+    }
+    button {
+        background-color: white;
+        border-color: black;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 43%;
+        margin-right: 43%;
+        :hover {
+            color: #213542;
+            border-color: #213542;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            :hover{
+                color: #213542;
+                text-decoration: none;
+            }
+        }
+    }
+}

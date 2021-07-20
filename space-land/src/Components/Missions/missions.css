@@ -23,6 +23,7 @@
   margin-bottom: 0%;
   padding-bottom: 0%;
   padding-left: 27%;
+  padding-right: 10%;
 }
 
 .containerMissions .containerItems {
@@ -38,5 +39,12 @@
   position: relative;
   height: auto;
   width: auto;
+}
+
+.containerMissions .containerItems :hover {
+  background-color: #49565E;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=missions.css.map */

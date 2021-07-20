@@ -27,6 +27,8 @@
         height: 83vh;
     }
     .containerMission {
+        display: flex;
+        flex-direction: column;
         flex-basis: 70%;
         background-color: white;
         color: black;
@@ -35,11 +37,8 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         height: 83vh;
-        button {
-            background-color: white;
-            border-color: black;
-            font-size: 16px;
-            padding: 2px 7px;
-        }
+        padding-left: 15%;
+        padding-right: 15%;
+        overflow:visible;
     }
 }
