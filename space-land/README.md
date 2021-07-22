@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Space Land 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Welcome!
+Welcome to missions made in space 🚀.
+This page was made using the SpaceX Graphql API to show the missions that have been carried out in space and more detailed information about each mission.
 
-## Available Scripts
+## The Challenge
+We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
 
-In the project directory, you can run:
+Please include a ``INSTRUCTIONS.md``:
+- Add prints of your application in the repository and use them in the readme
+- Setup instructions
+- How did you decide which technologies to use as part of your solution
+- Are there any improvements you could make to your submission
+- What would you do differently if you were allocated more time
 
-### `npm start`
+## Details
+Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on the following wireframe. Use your creativity to choose colors etc...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Test Wireframe](wireframe-test.png "Test Wireframe")
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The app
+#### Last Launches Component
+- List the last 10 missions
+- Clicking on the card, shows the **Mission** on right component
+- Indicate what is the selected card
 
-### `npm test`
+#### Mission Component
+- Details of the mission (image, etc...)
+- Button to external link
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Required
+- Vue or React or Angular
+- TDD (only SR)
+- Responsive (Otional for JR / Required for SR)
 
-### `npm run build`
+## Desirable
+- React using apollo client
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deliverables
+We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Bonus points
+- Your code has tests.
+- Perfect Pixel
+- UI/UX Improvements
+- Clean Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
+If you have any question please contact eduardo.carrada@99minutos.com, isabel@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
+Happy coding!
