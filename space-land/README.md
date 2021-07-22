@@ -2,50 +2,21 @@
 
 ## Welcome!
 Welcome to missions made in space 🚀.
-This page was made using the SpaceX Graphql API to show the missions that have been carried out in space and more detailed information about each mission.
+This page was made using the [SpaceX Graphql API](https://api.spacex.land/graphql/) to show the missions that have been carried out in space and more detailed information about each mission.
 
-## The Challenge
-We'll be looking for **simple, well-designed and tested(only PL/SR)** code in the submission.
+![Space Land App](https://raw.githubusercontent.com/MiriamNM/99minutos-frontend-interview-test-2/JR-miriamnava/space-land/src/assets/SpaceLand.jpg)
 
-Please include a ``INSTRUCTIONS.md``:
-- Add prints of your application in the repository and use them in the readme
-- Setup instructions
-- How did you decide which technologies to use as part of your solution
-- Are there any improvements you could make to your submission
-- What would you do differently if you were allocated more time
+In the INSTRUCTIONS.md file are the instructions to see and use this application.
 
-## Details
-Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a project based on the following wireframe. Use your creativity to choose colors etc...
+## Technological stack
+- Figma- Use this page, it is easy for me to make my prototypes here.
+- gitHub projects- To organize the execution of the application.
+- React- I find it easy to be able to make the components, perform the functionality and also, the code is clean.
+- SASS- I can more easily write my CSS using the same nesting structure as how I write my JSX or HTML.
 
-![Test Wireframe](wireframe-test.png "Test Wireframe")
+## Improvements
+- Use SASS to do the CSS, because it makes it easier and more practical for me to write my code.
 
-### The app
-#### Last Launches Component
-- List the last 10 missions
-- Clicking on the card, shows the **Mission** on right component
-- Indicate what is the selected card
-
-#### Mission Component
-- Details of the mission (image, etc...)
-- Button to external link
-
-## Required
-- Vue or React or Angular
-- TDD (only SR)
-- Responsive (Otional for JR / Required for SR)
-
-## Desirable
-- React using apollo client
-
-## Deliverables
-We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
-
-### Bonus points
-- Your code has tests.
-- Perfect Pixel
-- UI/UX Improvements
-- Clean Code
-
-If you come across any questions or anything we didn't cover on this README, feel free to reach out to us and we'll get you an answer as soon as possible.
-If you have any question please contact eduardo.carrada@99minutos.com, isabel@99minutos.com, jonathan@99minutos.com or carlos.ramirez@99minutos.com
-Happy coding!
+## Next steps
+- I would use apollo client, to improve my application.
+- I would ask for Feedback on the achievements so far and implement them to improve the user experience when viewing missions in space.
