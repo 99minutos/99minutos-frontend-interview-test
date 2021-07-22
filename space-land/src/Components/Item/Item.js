@@ -1,7 +1,6 @@
 import React from 'react';
 import Rocket from '../../assets/rocket.png'
 import './item.css';
-// import Moment from 'moment';
 
 const Item = (props) => {
     const {mission_name, launch_date_local, launch_site} = props.oneMission;
@@ -17,8 +16,7 @@ const Item = (props) => {
             <div className='textItem'>
                 <h3>{mission_name}</h3>
                 <p>{text}</p>
-                <p className='dateItem'>{date}</p>
-                 
+                <p className='dateItem'>{date}</p> 
             </div>
         </div>
     )

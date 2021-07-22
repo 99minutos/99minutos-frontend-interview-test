@@ -2,12 +2,7 @@ import React from 'react';
 import './detailsMission.css';
 
 const DetailsMission = (props) => {
-    // const handleAddLink = () => {
-    //     const link = props.item.links.video_link;
-    //     return link;
-    // }
-
-    return (
+    return(
         <>
             <div className='imageMission'>
                 <img src={props.item.ships[0].image} alt="Mission" />
@@ -24,7 +19,7 @@ const DetailsMission = (props) => {
                 </a></button>
             </div>
         </>
-    )
+    )    
 };
 
 export default DetailsMission;

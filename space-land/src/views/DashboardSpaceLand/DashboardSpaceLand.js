@@ -7,11 +7,11 @@ import './dashboardSpaceLand.css';
 const DashboardSpaceLand = () => {
     const [spaceLand, setSpaceLand] = useState([]);
     const [mission, setMission] = useState({
-        theMission:[],
-    })
+            theMission:[],
+        })
 
     const handleAddMission = (storyMission) => {
-        setMission({...mission, theMission:[...mission.theMission, storyMission]})
+        setMission({...mission, theMission:[ storyMission]});
     }
 
     const ApiData = async () => {
@@ -26,10 +26,18 @@ const DashboardSpaceLand = () => {
     return (
         <section className='containerDashboardSpaceLand'>
             <section className='missions'>
-                <Missions spaceLand={spaceLand} mission={mission} setMission={setMission} handleAddMission={handleAddMission}/>
+                <Missions 
+                spaceLand={spaceLand} 
+                mission={mission} 
+                setMission={setMission} 
+                handleAddMission={handleAddMission}
+                
+                
+
+                />
             </section>
             <section className='containerMission'>
-                <StoryMission mission={mission}/>
+                <StoryMission mission={mission} />
             </section> 
         </section>
     )

@@ -7,7 +7,7 @@ const StoryMission = (props) => {
     return (
         <div className='containerStoryMission'>
             {data.map((item)=>
-            <DetailsMission item={item}/>
+            <DetailsMission item={item} id={props.id} mission={props.mission}/>
             )}
         </div>
     )
