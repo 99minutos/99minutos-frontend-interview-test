@@ -12,5 +12,7 @@
   height: auto;
   width: auto;
   margin: 5% -62% 0% -70%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=storyMission.css.map */

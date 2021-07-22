@@ -1,0 +1,20 @@
+.withoutImage {
+  margin-top: 11px;
+  padding-top: 6px;
+  margin-left: 5%;
+}
+
+.withoutImage img {
+  width: 40%;
+}
+
+.imageMission {
+  margin-top: 0%;
+  margin-left: -15%;
+  margin-right: -18%;
+}
+
+.imageMission img {
+  width: 26%;
+}
+/*# sourceMappingURL=pictures.css.map */

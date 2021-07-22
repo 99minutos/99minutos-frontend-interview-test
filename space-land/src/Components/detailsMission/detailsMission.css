@@ -1,13 +1,3 @@
-.imageMission {
-  margin-top: 0%;
-  margin-left: -15%;
-  margin-right: -18%;
-}
-
-.imageMission img {
-  width: 28%;
-}
-
 .contentStoryMission {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +18,8 @@
   font-size: 13px;
   margin: 0% 18% 0% 20%;
   padding-bottom: 1.5%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 .contentStoryMission button {
@@ -35,8 +27,9 @@
   border-color: black;
   font-size: 14px;
   font-weight: bold;
-  margin-left: 48%;
-  margin-right: 45%;
+  margin-left: 47%;
+  margin-right: 42%;
+  margin-top: -1%;
 }
 
 .contentStoryMission button :hover {
