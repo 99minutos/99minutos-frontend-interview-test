@@ -20,3 +20,5 @@ In the INSTRUCTIONS.md file are the instructions to see and use this application
 ## Next steps
 - I would use apollo client, to improve my application.
 - I would ask for Feedback on the achievements so far and implement them to improve the user experience when viewing missions in space.
+- Improve the CSS at the time of projecting each mission.
+- Use [@ testing-library/react](https://www.npmjs.com/package/@testing-library/react) for testing tests.

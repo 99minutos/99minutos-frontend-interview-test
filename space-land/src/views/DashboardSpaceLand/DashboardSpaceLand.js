@@ -31,9 +31,6 @@ const DashboardSpaceLand = () => {
                 mission={mission} 
                 setMission={setMission} 
                 handleAddMission={handleAddMission}
-                
-                
-
                 />
             </section>
             <section className='containerMission'>

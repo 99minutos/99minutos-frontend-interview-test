@@ -3,7 +3,7 @@
 1. Fork my repository.
 2. Register your repository in git and download the repository locally by cloning it.
 2. On your console, install npm.
-3. In your command put the command npm start and open the location in [localHost:3000] (http://localhost:3000/).
+3. In your console put the command npm start and open the location in [localHost:3000] (http://localhost:3000/).
 
 **When making the inscriptions, you should be able to see the page that I show below.
 
