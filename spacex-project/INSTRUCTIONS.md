@@ -20,13 +20,13 @@ If I had more time, I would make a responsive site and maybe I would have starte
 
 - You can click each card in the list and a panel will be open
 
-![Start image](https://image.freepik.com/vector-gratis/cabina-nave-espacial-espacio-interior-vista-planetas_33099-2159.jpg?w=1380)
+![Start image](https://raw.githubusercontent.com/99minutos/99minutos-frontend-interview-test/d7cd9799e7a5ac60237ac5d32c667631f9130834/spacex-project/SS_1_Start.jpg)
 - Once the card is selected, you can see the image patch, name, details and external link of the mission. Besides, the card will change the background color if you clicked it.
 
-![Start image](https://image.freepik.com/vector-gratis/cabina-nave-espacial-espacio-interior-vista-planetas_33099-2159.jpg?w=1380)
+![Start image](https://raw.githubusercontent.com/99minutos/99minutos-frontend-interview-test/d7cd9799e7a5ac60237ac5d32c667631f9130834/spacex-project/SS_2_Selected.jpg)
 - You can see the cards that you have selected before!
 
-![Start image](https://image.freepik.com/vector-gratis/cabina-nave-espacial-espacio-interior-vista-planetas_33099-2159.jpg?w=1380)
+![Start image](https://raw.githubusercontent.com/99minutos/99minutos-frontend-interview-test/d7cd9799e7a5ac60237ac5d32c667631f9130834/spacex-project/SS_3_Cards_Selected.jpg)
 
 # Grettings 💚
 Thanks for the opportunity of doing this challenge. It was a very funny and interesting experiencie!
