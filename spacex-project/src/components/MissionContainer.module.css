@@ -1,0 +1,41 @@
+.missionContainer {
+	background-color: rgb(114, 28, 196);
+	width: 65%;
+	height: 91vh;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #000000;
+}
+
+.dataContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+
+.missionPatchImg {
+	width: 50vh;
+	height: 50vh;
+}
+
+.missionDetails {
+	width: 90%;
+	text-align: center;
+	font-size: 15px
+}
+
+.buttonLink {
+	margin-top: 10px;
+	padding: 10px 15px;
+	background-color: yellow;
+	border: 1px solid black;
+  	box-shadow: 2px 4px black;
+}
+
+.buttonLink a {
+	text-decoration: none;
+	color: black;
+}

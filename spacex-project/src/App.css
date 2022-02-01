@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container-mission{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
