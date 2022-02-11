@@ -53,10 +53,12 @@ Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a proj
 - React using apollo client
 
 ## Deliverables
-We expect this test to take around 4 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
+We expect this test to take around 5 hours, but not significantly more (your time is very valuable!). We're giving you a week from the date you receive it to complete it and send us your repo URL, using **the technology that you decide, of those mentioned in "required"**. Due to this, we ask that you also provide a `INSTRUCTIONS.md` with instructions for running your project, both api and frontend, along with setup instructions (or provide a Dockerfile and a `docker run` instruction).
 
 ### Bonus points
-- Your code has tests.
+- Material UI
+- Next.js
+- Your code has tests
 - Perfect Pixel
 - UI/UX Improvements
 - Clean Code
