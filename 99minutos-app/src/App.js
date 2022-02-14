@@ -4,11 +4,8 @@ import LastLaunches from "./components/LastLaunches/LastLaunches";
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className="App">
+   <BrowserRouter>
    <LastLaunches/> 
-
-    </div>
   </BrowserRouter>
   );
 }
