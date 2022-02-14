@@ -1,0 +1,30 @@
+.launches, pre{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10%;
+    
+}
+
+.img{
+width: 450px;
+margin-left: 20px;
+height: 200px;
+object-fit: cover;
+object-position: cover;
+}
+.btn{
+display: flex;
+justify-content: center;
+}
+
+.mission{
+    font-family: Koulen;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+h5{
+    font-family: Monaco;
+text-align: center;
+margin-top:-20px;
+}
