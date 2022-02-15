@@ -38,7 +38,7 @@ Use the [SpaceX Graphql API](https://api.spacex.land/graphql/) and create a proj
 #### Last Launches Component
 - List the last 10 missions
 - Clicking on the card, shows the **Mission** on right component
-- Indicate what is the selected card
+- **Is very important** indicate what is the selected card
 
 #### Mission Component
 - Details of the mission (image, etc...)
