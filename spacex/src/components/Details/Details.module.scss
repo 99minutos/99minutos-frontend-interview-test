@@ -1,0 +1,161 @@
+@import "../../variables.scss";
+
+.ctnDetails {
+	width: 60%;
+	height: 80vh;
+	background-color: white;
+	text-align: center;
+	@include small {
+		width: 90% !important;
+		height: 100%;
+		margin-bottom: 20px;
+	}
+	@include large {
+		width: 55%;
+	}
+}
+
+.ctnImg {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.textImgError {
+	position: absolute;
+	color: rgb(173, 0, 0);
+	font-size: 13px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0px;
+	@include center;
+}
+
+.seeMore {
+	color: rgb(255, 255, 255);
+	position: absolute;
+	font-size: 15px;
+	top: 10%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	margin: 0px;
+	cursor: pointer;
+	@include small {
+		left: 85%;
+		font-size: 14px;
+		width: 100px;
+	}
+}
+
+.seeMore:hover {
+	font-size: 16px;
+}
+
+.iconSad {
+	margin-right: 5px;
+}
+
+.imgError {
+	@include imgDetails;
+}
+
+.imgDetail {
+	@include imgDetails;
+}
+
+.titleName {
+	margin: 15px 0px 0px 0px;
+	font-size: 30px;
+	font-weight: 600;
+	@include small {
+		margin: 15px 5px 0px 5px;
+	}
+	@include large {
+		font-size: 25px;
+	}
+}
+
+.text {
+	@include textDetails;
+}
+
+.textError {
+	color: rgb(173, 0, 0);
+	@include textDetails;
+	@include center;
+}
+
+.ctnBtn {
+	@include small {
+		@include center;
+		margin-bottom: 10px;
+	}
+}
+
+.btn {
+	@include btn;
+	margin: 5px 30px 0px 30px;
+}
+.btn:hover {
+	background-color: rgb(161, 161, 161);
+	transform: scale(1.03);
+	transition: all 0.5s;
+}
+
+.icon {
+	@include iconBtn;
+}
+
+.ref {
+	text-decoration: none;
+	color: rgb(255, 255, 255) !important;
+	margin: 0px;
+	@include small {
+		display: none;
+	}
+	@include large {
+		font-size: 14px;
+	}
+}
+
+.titleSelect {
+	font-size: 40px;
+	position: static;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	@include small {
+		color: rgb(0, 0, 0);
+		height: 500px;
+	}
+}
+
+.iconSelect {
+	font-size: 70px;
+	margin-right: 30px;
+	color: rgb(0, 0, 0);
+	animation-name: iconSelect;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	@include small {
+		transform: rotate(90deg);
+		animation-name: none;
+		align-items: center;
+		margin-right: 0px;
+	}
+}
+
+@keyframes iconSelect {
+	from {
+		transform: translate(2px, 0px);
+		transform: translate(4px, 0px);
+		transform: translate(6px, 0px);
+	}
+}

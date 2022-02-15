@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.ctnCard {
+	@include ctnCard;
+}
+.ctnCard:hover {
+	transform: scale(1.03);
+	background-color: rgb(161, 161, 161);
+	transition: all 0.5s;
+}
+
+.ctnCardBlack {
+	@include ctnCard;
+	background-color: rgb(161, 161, 161);
+}
+
+.icon {
+	font-size: 70px;
+	margin-right: 20px;
+	color: rgb(0, 0, 0);
+	@include large {
+		font-size: 50px;
+	}
+}
+
+.name {
+	font-size: 18px;
+	font-weight: 500;
+
+	@include large {
+		font-size: 16px;
+	}
+}
+
+.siteName {
+	font-size: 14px;
+	@include large {
+		font-size: 13px;
+	}
+}
+
+.date {
+	text-align: right;
+	font-size: 12px;
+	margin: 0px;
+}

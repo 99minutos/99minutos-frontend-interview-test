@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.loading {
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+}
+
+.ctnCardDetails {
+	@include center;
+	height: 100vh;
+	width: 100% !important;
+	@include small {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.ctnCards {
+	height: 80vh;
+	width: 30%;
+	overflow-y: scroll;
+	background-color: white;
+	@include small {
+		width: 100% !important;
+		height: 100%;
+		display: flex;
+		overflow-y: scroll;
+		flex-direction: row;
+		margin-bottom: 10px;
+	}
+	@include large {
+		width: 35%;
+	}
+}
+
+.title {
+	text-align: center;
+	margin-top: 20px;
+	@include small {
+		margin: 0px 10px 0px 10px;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		@include center;
+	}
+}
