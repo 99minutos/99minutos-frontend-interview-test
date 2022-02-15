@@ -1,0 +1,54 @@
+.card{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #00076f;
+    color: white;
+}
+
+.cardSelected{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: white;
+}
+
+.card:hover {
+    background-color: #000442;
+    cursor: pointer;
+}
+
+.cardSelected:hover {
+    background-color: #000442;
+    cursor: pointer;
+}
+
+.card:last-child {
+    margin-bottom: 2px;
+}
+
+.imgSpaceship {
+    width: 100px;
+    height: 100px;
+}
+
+.miniDescription {
+    margin-left: 18px;
+}
+
+.titleMission {
+    font-weight: 700;
+}
+
+.dateMission {
+    float: right;
+    font-size: 14px;
+    color: rgb(218, 218, 218);
+}

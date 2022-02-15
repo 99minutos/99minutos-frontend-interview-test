@@ -1,0 +1,45 @@
+.titleCenter {
+  text-align: center;
+}
+
+.missionCards {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 91vh;
+    background-color: #ec91e0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.groupScroll {
+  overflow-y: scroll;
+  margin-left: 10px;
+}
+
+.groupScroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.groupScroll::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.groupScroll::-webkit-scrollbar-button:increment,.groupScroll::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.groupScroll::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.groupScroll::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #d5d6d8;
+}
+
+.groupScroll::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
