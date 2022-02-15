@@ -39,4 +39,4 @@ Poder agregar a favoritos, un buscador, filtrados y más también ya que es bast
 
 ![screenshots 4](screenshots/4.png "screenshots 4") ![screenshots 5](screenshots/5.png "screenshots 5") ![screenshots 6](screenshots/6.png "screenshots 6")
 
-### Muchas gracias por darme la oportunidad de poder aplicar mis conocimiento en el test, como tambien aprender nuevas tecnologias. Estoy contento por el resultado, espero que les guste.
+### Muchas gracias por darme la oportunidad de poder aplicar mis conocimiento en el test, como tambien aprender nuevas tecnologias. Estoy contento por el resultado, espero que les guste
