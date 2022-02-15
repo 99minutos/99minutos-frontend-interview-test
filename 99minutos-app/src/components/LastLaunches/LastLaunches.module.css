@@ -27,8 +27,7 @@ background-color: rgba(31, 41, 70, 0.952);
 
 .launch_cont{
   display: flex;
-  width: 60%;
-  float: left;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,8 +45,8 @@ background-color: rgba(31, 41, 70, 0.952);
   font-family: Handle;
 }
 .ul {
-    margin: 10px;
-	padding: 0px;
+	padding: 10px;
+  margin-left: -20px;
   color: #fff;
   list-style: none;
 }
@@ -101,9 +100,8 @@ background-color: rgba(31, 41, 70, 0.952);
 
 .mission{
   display: flex;
-  width: 60%;
-  margin-top: 5%;
-  float: right;
+  justify-content: center;
+  width: 50%;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 }

@@ -27,12 +27,16 @@ export default function LastLaunches() {
   // Lista de las últimas 10 misiones
   //Al hacer clic en la tarjeta, muestra la Misión en el componente derecho
   //Indicar cual es la carta seleccionada
+
   const [flag, setFlag] = useState(false);
   const [dateLocal, setDateLocal] = useState(null);
+
   function handleClick(e, launch) {
     setDateLocal(launch);
+    console.log(launch.id);
     setFlag(true);
   }
+
   const { data, loading, error } = useQuery(DATA_QUERY);
   // const id = data.launchesPast.id;
   if (loading) return "Loading...";
@@ -48,6 +52,7 @@ export default function LastLaunches() {
               <button
                 className={styles.btn}
                 onClick={(e) => handleClick(e, launch)}
+                id="btn"
               >
                 <li className={styles.li}>
                   <img
@@ -70,8 +75,10 @@ export default function LastLaunches() {
           <Mission id={dateLocal} />
         ) : (
           <div>
-            <img src={space} alt="404" width="500"/>{" "}
-            <h3 className={styles.h3}>CLICK ON ANY ROCKET TO SEE ITS INFORMATION </h3>
+            <img src={space} alt="404" width="500" />{" "}
+            <h3 className={styles.h3}>
+              CLICK ON ANY ROCKET TO SEE ITS INFORMATION{" "}
+            </h3>
           </div>
         )}
       </div>

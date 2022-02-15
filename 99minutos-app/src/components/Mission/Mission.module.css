@@ -1,30 +1,47 @@
-.launches, pre{
-    color: #fff;
-    font-weight: bold;
-    margin-top: 10%;
-    
+.launches{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
 
-.img{
-width: 450px;
-margin-left: 20px;
-height: 200px;
-object-fit: cover;
-object-position: cover;
+.img {
+  width: 460px;
+  height: 200px;
+  object-fit: cover;
+  object-position: cover;
 }
-.btn{
-display: flex;
-justify-content: center;
+.btn {
+  color: #ffffffe7;
+  border: 2px #111155 solid;
+  cursor: pointer;
+  background-color: rgba(13, 28, 80, 0.966);
+  border-radius: 7px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 18px;
+  transition: 0.5s;
 }
 
-.mission{
-    font-family: Koulen;
-    letter-spacing: 5px;
-    text-align: center;
+.btn:hover {
+    color: rgba(13, 28, 80, 0.966);
+    border: 2px #ffffffe7 solid;
+    background-color: #ffffffe7;
+  }
+
+.mission {
+  font-family: Koulen;
+  letter-spacing: 3px;
 }
 
-h5{
-    font-family: Monaco;
-text-align: center;
-margin-top:-20px;
+h5 {
+  font-family: Monaco;
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 0;
 }
