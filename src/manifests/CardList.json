@@ -1,0 +1,24 @@
+{
+  "cards": [
+    {
+      "image": "../src/images/dudes 1.jpg",
+      "title": "Consultoría",
+      "body": "Duis autem velm iriure dolor in hendrerit vulputate..."
+    },
+    {
+      "image": "../src/images/plant.png",
+      "title": "Formación",
+      "body": "Veliesse molestie consequat vel illum dolore..."
+    },
+    {
+      "image": "../src/images/images3.png",
+      "title": "Análisis",
+      "body": "Feugiat nulla facilisis at vero eroes et accumsan..."
+    },
+    {
+      "image": "../src/images/images4.png",
+      "title": "Investigación",
+      "body": "Dignissim qui blandit praent luptatum..."
+    }
+  ]
+}

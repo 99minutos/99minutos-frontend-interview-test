@@ -1,0 +1,57 @@
+{
+  "name": "99minutos-frontend-interview-test",
+  "version": "1.0.0",
+  "description": "Interview test for Frontend Software Engineers",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "jest",
+    "test:update": "jest --updateSnapshot",
+    "test:watch": "jest --watch",
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdielDev/99minutos-frontend-interview-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdielDev/99minutos-frontend-interview-test/issues"
+  },
+  "homepage": "https://github.com/abdielDev/99minutos-frontend-interview-test#readme",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "@babel/plugin-transform-runtime": "^7.12.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@babel/runtime": "^7.12.1",
+    "date-fns": "^2.16.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/src/__mocks__/styleMock.js",
+      "\\.(png|jpg|jpeg)$": "<rootDir>/src/__mocks__/imageMock.js"
+    }
+  }
+}
