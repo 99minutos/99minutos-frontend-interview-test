@@ -13,7 +13,7 @@
 	@include center;
 	height: 100vh;
 	width: 100% !important;
-	@include small {
+	@include media(xs) {
 		height: 100%;
 		display: flex;
 		justify-content: center;
@@ -27,7 +27,7 @@
 	width: 30%;
 	overflow-y: scroll;
 	background-color: white;
-	@include small {
+	@include media(xs) {
 		width: 100% !important;
 		height: 100%;
 		display: flex;
@@ -35,15 +35,15 @@
 		flex-direction: row;
 		margin-bottom: 10px;
 	}
-	@include large {
-		width: 35%;
+	@include media(lg) {
+		width: 30%;
 	}
 }
 
 .title {
 	text-align: center;
 	margin-top: 20px;
-	@include small {
+	@include media(xs) {
 		margin: 0px 10px 0px 10px;
 		text-align: center;
 		color: rgb(0, 0, 0);

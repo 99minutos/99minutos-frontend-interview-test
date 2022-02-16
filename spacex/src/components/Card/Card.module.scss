@@ -18,7 +18,7 @@
 	font-size: 70px;
 	margin-right: 20px;
 	color: rgb(0, 0, 0);
-	@include large {
+	@include media(lg) {
 		font-size: 50px;
 	}
 }
@@ -27,14 +27,14 @@
 	font-size: 18px;
 	font-weight: 500;
 
-	@include large {
+	@include media(lg) {
 		font-size: 16px;
 	}
 }
 
 .siteName {
 	font-size: 14px;
-	@include large {
+	@include media(lg) {
 		font-size: 13px;
 	}
 }
