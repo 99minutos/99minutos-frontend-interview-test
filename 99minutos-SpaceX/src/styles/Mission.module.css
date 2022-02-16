@@ -1,0 +1,61 @@
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDetails {
+    padding: 7rem 0 7rem 0;
+    margin: auto;
+    width: 38vw;
+    height: 68vh;
+}
+
+.titleDetails {
+    padding: 10px;
+    text-align: center;
+}
+
+.message {
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.selectedImage {
+    padding-top: 5rem;
+    margin: auto;
+    width: 20vw;
+    height: 45vh;
+}
+
+.textDetails {
+    padding: 5px;
+    text-align:center;
+    font-size: 17px;
+}
+
+.errorDetails{
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 17px;
+}
+
+.btnMoreDetails {
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.btnDetails {
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 540px) {
+    .selectedImage {
+        padding-top: 5rem;
+        margin: auto;
+        width: 20vw;
+        height: 25vh;
+    }
+}
+
