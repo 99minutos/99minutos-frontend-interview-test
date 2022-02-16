@@ -1,0 +1,9 @@
+{
+  "name": "signati",
+  "alias": ["signati.io"],
+  "version": 2,
+  "env": {},
+  "build": {
+    "env": {}
+  }
+}
