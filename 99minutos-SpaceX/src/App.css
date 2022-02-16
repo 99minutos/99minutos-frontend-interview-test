@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+body { 
+  background-color: rgb(4, 7, 49);
+}
+
+.container-app {
+  background-color: rgb(194, 194, 194);
+  margin: 6rem 3rem 5rem 3rem;
+}
+
+h1{
+  text-align: center;
+}
+
+.containerMissions{
+  background-color: rgb(194, 194, 194);
+}
+

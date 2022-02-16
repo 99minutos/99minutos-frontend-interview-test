@@ -1,0 +1,59 @@
+.bodyColor {
+    background-color: rgb(194, 194, 194);
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.bodyColor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.bodyColor::-webkit-scrollbar-thumb {
+    background-color: rgb(4, 7, 49);
+    border-radius: 20px;
+    border: 2px solid #c3c3c3;
+}
+
+.iconName {
+    padding-top: 1rem;
+}
+
+.missionDate {
+    display: flex;
+    text-align: end;
+    flex-flow: column;
+    padding: 0;
+}
+
+
+.image {
+    height: 13vh;
+    width: 7vw;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.textList {
+    font-size: 20px;
+}
+
+.CardMission {
+    background-color: rgb(143, 143, 151);
+}
+
+.CardMission:hover {
+    cursor: pointer;
+    background-color: rgb(117, 146, 200);
+}
+
+/* Media Queries */
+@media (max-width: 540px) {
+    .bodyColor {
+        height: 55vh;
+    }
+
+    .image {
+        height: 12vh;
+        width: 17vw;
+    }
+}
