@@ -1,0 +1,107 @@
+.container {
+  border: #fff 2px solid;
+  background: rgba(2, 1, 12, 0.739);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  margin:auto;
+  margin-top:5%;
+  width:80%;
+  height: 80vh;
+}
+ul{
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+background-color: hsl(223, 20%, 38%);
+}
+::-webkit-scrollbar-thumb{
+background-color: rgba(31, 41, 70, 0.952); 
+}
+
+
+.launch_cont{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  color: #fff;
+  margin: 0;
+  font-family: Koulen;
+  letter-spacing: 5px;
+  font-size: 3em;
+}
+.mission_name{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Handle;
+}
+.ul {
+	padding: 10px;
+  margin-left: -20px;
+  color: #fff;
+  list-style: none;
+}
+.site{
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+.li {
+  border: #fff 1px solid;
+  text-align: center;
+}
+.launches {
+  padding: 10px;
+}
+.img{
+    height: 60px;
+    margin: 5%;
+    float:left;
+}
+.h3{
+  font-weight: bold;
+  font-family: Roboto;
+  color:#fff;
+  font-size: 17px;
+  text-align: center;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+.btn{
+    width: 100%;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.btn:hover{
+    background: rgba(2, 1, 12, 0.849);
+    transition: all 0.5s;
+    color: rgba(199, 200, 247, 0.931);
+}
+
+.btn:focus{
+    background: rgba(2, 1, 12, 0.849);
+    transition: all 0.5s;
+    color: rgba(199, 200, 247, 0.931);
+}
+
+.mission{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  overflow-y: auto;
+}
