@@ -1,0 +1,13 @@
+.card{
+    margin-bottom: 15px;
+}
+
+.card-selected {
+    background-color: #3790fe;
+}
+
+.title {
+    color: #12344a;
+    font-size: 32px;
+    font-weight: bold;
+}

@@ -1,0 +1,33 @@
+<div class="text-center">
+  <label class="title">Last Launches</label>
+</div>
+
+<div *ngFor="let mission of launchesList$ | async">
+
+  <div class="card shadow-lg rounded" [ngClass]="{'card-selected': missionSelected === mission.id}" (click)="missionDetail(mission.id);">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4">
+          <img src="{{ mission.links.mission_patch}}" class="img-thumbnail"> 
+        </div>
+
+        <div class="col-8">
+
+          <div class="d-flex flex-column">
+            <div class="p-2">
+              <strong>{{ mission.mission_name }}</strong>
+            </div>
+            <div class="p-2">
+              {{ mission.details | slice:0:40 }}
+            </div>
+          </div>
+
+          <div class="d-flex flex-row-reverse">
+            <div class="p-2">{{ mission.launch_date_local | date: 'dd/MM/yyyy' }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
