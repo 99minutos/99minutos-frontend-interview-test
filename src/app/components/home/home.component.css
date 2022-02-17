@@ -1,0 +1,15 @@
+.launches{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.launch-image{
+    text-align: center;
+}
+.launch-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}

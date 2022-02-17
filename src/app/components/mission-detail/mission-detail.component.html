@@ -1,0 +1,28 @@
+<ng-container *ngIf="missionDetail$ | async as mission">
+
+  <div class="card">
+    <ng-container *ngIf="mission.links.flickr_images.length > 0">
+      <img class="card-img-top img-fluid" src="{{mission.links.flickr_images}}" alt="Card image cap">
+    </ng-container>
+
+    <ng-container *ngIf="mission.links.flickr_images.length == 0">
+      <img class="card-img-top img-fluid" src="{{mission.links.mission_patch}}" alt="Card image cap">
+    </ng-container>
+
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ mission.mission_name }}</h5>
+      <p class="card-text">
+        {{ mission.details }}        
+      </p>
+      <div class="text-center">
+        <a href="{{mission.links.wikipedia}}" target="_blank" class="btn btn-primary">See more</a>
+      </div>
+    </div>
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="!missionDetail$">
+  <app-rocket></app-rocket>
+</ng-container>
+
