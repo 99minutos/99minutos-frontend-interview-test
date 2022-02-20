@@ -3,6 +3,7 @@ import { gql } from '@apollo/client';
 const TOP_TEN_MISSIONS = gql`
 query TopTenMissions {
   launchesPast(limit: 10) {
+    id
     mission_name
     details
     launch_date_local
@@ -12,9 +13,7 @@ query TopTenMissions {
     links {
       article_link
       video_link
-    }
-    ships {
-      image
+      flickr_images
     }
   }
 }

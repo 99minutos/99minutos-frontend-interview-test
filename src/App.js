@@ -5,8 +5,9 @@ import MissionArticle from './Components/MissionArticle';
 
 function App() {
   return (
-    <CardMission />
-     
+    <main>
+      <CardMission />
+    </main>
   );
 }
 

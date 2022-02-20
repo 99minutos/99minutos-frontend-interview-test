@@ -3,44 +3,64 @@ import { useQuery } from '@apollo/client'
 import Rocket from '../Resources/rocket.png'
 import TOP_TEN_MISSIONS from '../graphql/getTopTenMissions.graphql'
 import MissionArticle from './MissionArticle'
+import { CircularProgress } from '@mui/material'
+import Presentation from './Presentation'
 
 
-const CardMission = ({ addArticle }) => {
+const CardMission = () => {
   const { data, error, loading } = useQuery(TOP_TEN_MISSIONS);
   const [showMission, setShowMission] = useState(false)
   const [missionInfo, setMissionInfo] = useState([])
-  const [articleSelected, setarticleSelected] = useState(false)
+  const [articleSelected, setarticleSelected] = useState("missionCard")
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <CircularProgress />
   if (error) return <p>Error :(</p>;
 
-  const handleClick = (mission) =>{
+  const handleClick = (mission,e) => {
     setShowMission(true);
     setMissionInfo(mission);
-    setarticleSelected(true)
+    setarticleSelected("missionCard clicked");
+    console.log(e)
   }
 
- 
+  const hiddenArticle = () => {
+    setShowMission(false);
+    setarticleSelected(articleSelected)
+  }
+
+
   return (
-    <main>
+
+    <>
       <section>
-        {data.launchesPast.map((mission) => (
-          <article key={mission.mission_name} className={articleSelected ? "missionCard selected" : "missionCard"} onClick={() => handleClick(mission)} >
-            <img src={Rocket} alt="rocket icon" height="40px" />
-            <div>
-              <h3>{mission.mission_name}</h3>
-              <p>{mission.launch_site.site_name_long}</p>
-              <p id='date'>{mission.launch_date_local}</p>
-            </div>
-          </article>
-        )).slice(0, 4)}
-      </section>
-      <article>
+        <h1>Last Launches</h1>
         {
-          showMission ? <MissionArticle data={missionInfo} /> : "holaaaaaa"
+          data.launchesPast.map((mission) => (
+
+            mission.mission_name ? (
+              <article key={mission.id} className={articleSelected? "missionCard clicked" : "missionCard"} onClick={() => handleClick(mission)} >
+                <img src={Rocket} alt="rocket icon" height="40px" />
+                <div>
+                  <h3>{mission.mission_name}</h3>
+                  <p>{mission.launch_site.site_name_long}</p>
+                  <p id='date'>{mission.launch_date_local}</p>
+                </div>
+              </article>
+            ) : (
+              <article className={articleSelected ? "clicked" : "missionCard"}>
+                <img src={Rocket} alt="rocket icon" height="40px" />
+                <div>
+                  <h3>We're working on this mission, yet! 🚀</h3>
+                </div>
+              </article>
+            )
+          ))
         }
-      </article>
-    </main>
+      </section>
+      {
+        showMission ? <MissionArticle data={missionInfo} hiddenArticle={hiddenArticle}/> : <Presentation />
+      }
+    </>
   )
 }
 

@@ -1,10 +1,9 @@
 main{
   width: 80%;
-  height: 440px;
+  height: 27.5rem;
   display: flex;
   margin: auto;
   overflow: hidden;
-  /*border: 1px solid green;*/
   padding: 1rem;
 }
 
@@ -15,30 +14,32 @@ section{
   flex-direction: column;
   align-items: center;
   padding: 0.3rem;
+  overflow: scroll;
   box-sizing: border-box;
-  /*border: 1px solid blue;*/
 }
 
 article{
-  width: 65%;
   height: auto;
-  /*border: 1px solid red;*/
 }
 
 #missionArticle{
-  width: 100%;
+  width: 65%;
+  padding: 0.3rem;
   text-align: center;
 }
 
 #missionArticle div{
   width: 100%;
-  height: 250px;
+  height: 15.6rem;
   box-sizing: content-box;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #missionArticle img {
-    width: 100%;
+  width: 100%;
 }
 
 #missionArticle h2{
@@ -50,21 +51,27 @@ article{
   font-size: 11px;
 }
 
-#missionArticle button{
+button{
   font-weight: bold;
   font-size: 0.7rem;
   color: #fff;
   border: none;
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
   background: #f87966;
+  margin: 0.2rem;
 }
 
-#missionArticle button:hover{
+button:hover{
   background: #fff;
   color: #f87966;
   transition: 0.2s;
   cursor: pointer;
+}
+
+.lineButton{
+  background: none;
+  border: 1px solid #f87966;
 }
 
 h2{
@@ -80,7 +87,7 @@ h2{
   align-items: center;
   margin: 0.5rem;
   padding: 0.2rem;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   background: #131313;
 }
 
@@ -92,8 +99,9 @@ h2{
 }
 
 .clicked{
-  background-color: #fabdb3;
+  border: 1px solid #f87966;
 }
+
 .missionCard img{
   margin: 1rem;
 }
@@ -116,3 +124,29 @@ h2{
   margin-top: 0.3rem;
   color: rgb(146, 146, 146);
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid #000;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
