@@ -1,3 +1,33 @@
+# 📦 99minutos Frontend Test
+
+## Bienvenidos a mi ``INSTRUCTIONS.md``
+
+## Add prints of your application in the repository and use them in the readme
+
+## Setup instructions
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## ¿Por qué decidiste utilizar cada una de las tecnologías que formaron parte de tu solución?
+Principalmente decidí utilizar las tecnologías con las que contaba mayor conocimiento y sabía podía llegar a resolver el ejercicio. Particularmente, no había trabajado con GraphQL por lo que esto ya significaba un desafío. A mi parecer, sumar mayor dificultad con tecnologías con las que no me encontraba familiarizada podrían haber afectado el resultado final en cuanto a tiempo y performance.
+
+## ¿Hay alguna mejora que realizar en la solución?
+Sin dudas el ejercicio debe presentar detalles a mejorar, me hubiera gustado resolver más en profundidad los siguientes casos:
+* Filtrar las misiones que se obtenían desde GraphQL que contenían alguna de las propiedades, que posteriormente utilizaríamos en la aplicación, en null. Tal es así, que la primera CardMission devuelve una misión que no contiene descripción.
+* 
+
+## ¿Qué habrías hecho diferente si tendrías más tiempo?
+En caso de contar con más tiempo habría ahondado más en profundidad en el uso de MaterialUI, conozco la librería y sé para qué se utiliza pero ya que el ejercicio no presentaba mayor complejidad ni alto uso de complementos, decidí resolver los estilos con CSS debido a que me encuentro más familiarizada con el uso de los mismos.
+
+## 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
