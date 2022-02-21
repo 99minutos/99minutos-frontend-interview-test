@@ -3,9 +3,9 @@ import React from 'react';
 const Presentation = () => {
 
     return(
-        <article id='missionArticle'>
+        <div className='mission'>
             <h2>Select your mission for more info</h2>
-        </article>
+        </div>
     )
 }
 

@@ -1,12 +1,11 @@
 import './App.css';
 import React from 'react'
-import CardMission from './Components/CardMission';
-import MissionArticle from './Components/MissionArticle';
+import CardList from './Components/CardList';
 
 function App() {
   return (
     <main>
-      <CardMission />
+      <CardList />
     </main>
   );
 }
