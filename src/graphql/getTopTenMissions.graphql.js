@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
-const TOP_TEN_MISSIONS = gql`
-query TopTenMissions {
+const TEN_LAUNCHES_PAS = gql`
+query TenLaunchesPast {
   launchesPast(limit: 10) {
     id
     mission_name
@@ -19,4 +19,4 @@ query TopTenMissions {
 }
 `;
 
-export default TOP_TEN_MISSIONS;
+export default TEN_LAUNCHES_PAS;
