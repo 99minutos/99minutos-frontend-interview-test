@@ -17,7 +17,7 @@ This is a quick coding challenge we designed to assess your qualifications as a 
 To get started with this challenge: 
 1) Fork this repository.
 2) Create a branch with the name: ``yourlevel-yourname``, example: ``JR-joaosilva``
-3) When you finish, make a pull request with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/SR).
+3) When you finish, make a **pull request** with name ``yourname``, example ``João Silva`` and add a tag with your level (JR/SR).
 
 ## The Challenge
 We'll be looking for **simple, well-designed and tested(only SR)** code in the submission.
