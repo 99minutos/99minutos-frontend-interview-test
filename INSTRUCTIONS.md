@@ -4,8 +4,8 @@
 ## Bienvenidos a mi ``INSTRUCTIONS.md``
 
 ## Screenshots
-![Screenshot01](/src/Resources/screenshot01.jpg)
-![Screenshot02](/src/Resources/screenshot02.jpg)
+![Screenshot01](/src/Resources/screenshot01.JPG)
+![Screenshot02](/src/Resources/screenshot02.JPG)
 ![Screenshot03](/src/Resources/screenshot03.jpg)
 
 ## Instrucciones:
