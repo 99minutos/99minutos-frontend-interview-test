@@ -15,7 +15,7 @@ const CardList = () => {
   if (loading) return <CircularProgress />
   if (error) return <p>Error :(</p>;
 
-  const handleClick = (e, mission) => {
+  const handleClick = (mission) => {
     setShowMission(true);
     setMissionInfo(mission);
   }
@@ -35,7 +35,7 @@ const CardList = () => {
             mission.mission_name ? (
 
               <div className='cardItem' key={mission.id}>
-                <button className='btnMission' onClick={(e) => handleClick(e, mission)}>
+                <button className='btnMission' onClick={() => handleClick(mission)}>
                   <img src={Rocket} alt='rocket icon' height='40px' />
                   <div>
                     <h3>{mission.mission_name}</h3>

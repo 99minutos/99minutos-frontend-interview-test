@@ -4,9 +4,9 @@ import CardList from './Components/CardList';
 
 function App() {
   return (
-    <main>
+    <>
       <CardList />
-    </main>
+    </>
   );
 }
 
