@@ -1,0 +1,154 @@
+main{
+  width: 80%;
+  height: 27.5rem;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+section{
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.mission{
+  width: 65%;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.mission div{
+  width: 100%;
+  height: 15.6rem;
+  box-sizing: content-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission img {
+  width: 100%;
+}
+
+.mission h2{
+  font-size: 1.3rem;
+  margin: 0.2rem;
+}
+
+.mission p{
+  font-size: 11px;
+}
+
+/* ===== Buttons  ===== */
+
+button{
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  color: #fff;
+  background: #131313;
+}
+
+button:hover{
+  color: #f87966;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btnMission{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.btnMission:focus{
+  background: #8f54a0;
+}
+
+.btnLine{
+  border: 1px solid #f87966;
+}
+
+h1,h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+h1{
+  margin: 0;
+}
+
+h2{
+  margin: 0.5rem;
+}
+
+/* ===== Card Item  ===== */
+
+.cardItem{
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+.cardItem img{
+  margin: 1rem;
+}
+
+.cardItem h3, .cardItem p {
+  margin: 0.2rem;
+  text-align: left;
+}
+
+.cardItem h3{
+  font-size: 0.7rem;
+}
+
+.cardItem p{
+  font-size: 0.6rem;
+}
+
+.cardItem #date{
+  font-size: 0.6rem;
+  text-align: right;
+  margin-top: 0.3rem;
+  color: #cacaca;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid #000;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
