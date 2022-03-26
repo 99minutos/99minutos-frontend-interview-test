@@ -1,0 +1,36 @@
+.content{
+    margin-top: 1rem;
+    max-height: 600px;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.image{
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+a{
+    text-decoration: none;
+}
+
+button {
+    margin: 0.25rem !important;
+}
+
+@media (max-width: 768px) {
+    .display-mobile{
+        display: none;
+    }
+    .content{
+        max-height: none;
+        overflow-y: auto;
+    }
+}
