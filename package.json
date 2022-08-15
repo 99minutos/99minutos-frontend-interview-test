@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "99minutos-frontend-interview-test",
   "version": "0.1.0",
   "private": true,
